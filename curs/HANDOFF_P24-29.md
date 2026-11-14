@@ -13,6 +13,21 @@ window.
 - the 1A trial (`sample.html`);
 - the 30-step course (`index.html` / `lesson.js` / `app.js`). None of these files was modified in this phase.
 
+## Status (2026-11-14, after Codex's fourth review)
+
+**Closed** means only that the technical and functional fixes passed independent review. It does **not** mean the
+teaching product is accepted.
+
+| Status | Item | Note |
+|---|---|---|
+| Closed | F17 async navigation race | Codex round 4 PASS (relayed by the user; round-4 report not yet in the repo): S1–S9, the 8 `sequence()` callers, the l11 animation cancel and the key flows of six lessons |
+| Closed | F18 evidence index | still PASS |
+| Closed | F01–F16, N1 | round-1 acceptance (F01 closed together with F17) |
+| Frozen technical baseline | `8cc7f94` | main = GitHub = Pages, checked 2026-11-14; tag `f17-f18-accepted-8cc7f94` (local; push approved but failed: remote disconnect, see below); evidence index `tools/expected/evidence/CODEX_R4_INDEX.md` (**evidence gap**: the Codex round-4 report text itself is not archived) |
+| In progress | F19 UI/UX phase 1 | branch `f19-phase1` (not merged, not deployed): shared toolbar layout + shared camera safe area, piloted on l03/l04/l07/l08; waiting for the user's review of the pilot — see «F19 phase 1 pilot» below |
+| Manual acceptance pending | real devices, Emily trial, Catalan review | not done; never report as done |
+| Deferred | l13–l19 (P30–37) | phase 2, new window |
+
 ## Commits (base `11e3003`)
 
 | Commit | Gate | What |
@@ -179,6 +194,63 @@ F17 is NOT declared closed: it is waiting for Codex's fourth independent review.
 **Not in this round.** F19 (desktop- and tablet-first UI/UX: teaching panel, lesson cameras, device fit) is
 registered in the master doc as a separate work package. A design proposal comes first, for the user to approve. No
 interface was changed.
+
+## F19 phase 1 pilot (2026-11-14, branch `f19-phase1`, not merged, not deployed)
+
+User instruction 11-14 14:48: shared code first; pilot on l03, l04, l07, l08; count what the shared mechanism fixes
+before tuning any single view; l10 only with evidence; stop for review.
+
+**Who owns what (shared components).**
+
+| Concern | Shared file | Lesson file |
+|---|---|---|
+| lesson panel, view toolbar, toast, breakpoint ≤ 760 px | `curs.html` (CSS) | — |
+| toolbar buttons (🎯 🔄 ＋ － A+) | `player.js` `viewBtns()` | — |
+| camera framing (centre + distance) | `player.js` `safeRect()`, `fitDist()`, `viewOffset()`, `frame()` | `views` (what each view shows, from where) |
+| opt-in to the safe area | — | `safeFrame: true` |
+
+**Changes.**
+- `curs.html`: panel width as `--Lw`; toolbar inside the model area, next to the panel (desktop/tablet) or one row above
+  the bottom sheet (≤ 760 px); the rest-reminder toast no longer covers the panel or the toolbar.
+- `player.js`: `safeRect()` = window minus banner, panel, toolbar, 6 % margin per side; with `safeFrame` the camera
+  centre goes to its centre and `fitDist()` fits it (lessons without the flag: framing unchanged, proven below);
+  toolbar created before the first view (`showApp()` order). No change to lifecycle, `wait`/`later`, `sequence()`.
+- `l03.js`, `l04.js`, `l07.js`, `l08.js`: `safeFrame: true` only. No view, question, answer, scoring or record change.
+- `l10.js`: unchanged (no defect found, see below). 3D models, `app.js`, `index.html`, `sample.html`: unchanged.
+- New: `tools/f19_layout.py` (measuring tool), `tools/f19_phase1/` (comparison scripts), evidence in
+  `tools/expected/evidence/f19p1/`.
+
+**Results** (6 viewports: D1920 D1440 D1366 T1180L T820P P393; before = `8cc7f94`, after = branch)
+
+| Check | Before | After |
+|---|---|---|
+| toolbar over panel (start step + first question, 12 lessons) | 72/72 steps on D1440/T1180L/T820P (audit) | 0/144 |
+| panel buttons reachable by a tap at their centre | «✕» covered on every desktop/tablet step | 935/936 (the 1 left: on the phone one l10 option has its centre under the «Continua» bar; identical on `8cc7f94`, not caused by F19) |
+| toolbar buttons ≥ 44 px and reachable | — | 720/720 |
+| toolbar buttons work (touch on tablet/phone) | — | 30 runs × 5 buttons, all work |
+| pilot views (31 × 6 = 186): framed parts not fully in safe area | 72 | 0 |
+| pilot views: framed parts under the toolbar | 3 | 0 |
+| pilot views: head cut by an edge | 42 | 61 (23 new, mostly 3–6 % slivers; 4 fixed) |
+| pilot views: a hand/foot cut by an edge | 52 | 47 |
+| pilot cases with no problem | 55 | 105 |
+| 8 other lessons (246 view × viewport): camera request and projection | — | identical (max difference 0) |
+
+The shared mechanism fixes everything about the target and the toolbar. It does not decide what to do with a head,
+hand or foot that is not the target but sits at the frame edge: 17 of 31 pilot views still cut one (list in the F19
+proposal doc, section 10). That needs a per-view choice (show it whole, or leave it out), not more shared code.
+
+**l10**: on all 6 viewports biceps, triceps, the elbow and the 3 labels are fully on screen and clear of the toolbar
+and the panel (`l10_arm_probe_after.json`); camera identical to `8cc7f94`. No visual defect → `views.arm` not changed.
+
+**Regression on the branch**: f17_race 51/0 · f17_s1_review 43/0 · b_scenarios 24/0 · geo_probe 12/0 ·
+curs_test l01 56/0, l03 99/0, l04 132/0, l07 57/0, l10 47/0, l08 152/0 (first run stopped by the 40-min limit during the day-2 review; rerun without limit 152/0, same as on `8cc7f94`).
+
+**Repository**: tag push and branch push attempted; the remote dropped the connection and this session has no
+GitHub API access to check Pages settings. Remote has only `main`, no workflow files, `.nojekyll` → Pages is served
+from a branch (main); a pushed `f19-phase1` would not be deployed. Push still to do.
+
+**Before merging (later, after approval)**: bump the module query `?v=1b` in `player.js` so browsers fetch the new
+lesson files; the 8 other lessons get the toolbar move but not the safe area until evaluated.
 
 ## How to re-verify (independent reviewer)
 

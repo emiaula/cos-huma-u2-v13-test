@@ -35,14 +35,33 @@ const CFG = (await import(`./${lessonId}.js?v=1b`)).default;
 
 // ---------------------------------------------------------------- camera framing for the area not covered by the card
 const L = $('L'), body = $('Lbody');
+// F19 shared camera safe area. A lesson with `safeFrame: true` frames its views inside the part of the screen that is
+// really free for the model: below the banner, beside (or above) the lesson panel, clear of the view toolbar, with a
+// MARGIN on every side. The camera's centre is put on the centre of that area and the distance makes the given
+// half-height/half-width fit it. Lessons without the flag keep the original framing unchanged.
+const SAFE = !!CFG.safeFrame, MARGIN = .06;
+function safeRect() {
+  const W = innerWidth, H = innerHeight; let x0 = 0, y0 = 0, x1 = W, y1 = H;
+  const ban = document.querySelector('.banner'); if (ban && getComputedStyle(ban).display !== 'none') y0 = Math.max(y0, ban.getBoundingClientRect().bottom);   // fixed: offsetParent is null
+  if (L.style.display !== 'none') { const r = L.getBoundingClientRect(); if (W <= 760) y1 = Math.min(y1, r.top); else x1 = Math.min(x1, r.left - 10); }
+  const vb = $('Vbox');
+  if (vb && getComputedStyle(vb).display !== 'none') { const r = vb.getBoundingClientRect();
+    if (r.width && r.height && r.left < x1 && r.top < y1) { if (r.height >= r.width) x1 = Math.min(x1, r.left - 8); else y1 = Math.min(y1, r.top - 8); } }
+  const mx = Math.max(0, x1 - x0) * MARGIN, my = Math.max(0, y1 - y0) * MARGIN;
+  return { x0: x0 + mx, y0: y0 + my, x1: Math.max(x0 + mx + 1, x1 - mx), y1: Math.max(y0 + my + 1, y1 - my) };
+}
 function fitDist(h, w = h * .55) {
   const v = camera.view && camera.view.enabled ? camera.view : null, tf = Math.tan(T.MathUtils.degToRad(camera.fov / 2));
+  if (SAFE && L.style.display !== 'none') { const s = safeRect(), fullH = v ? v.fullHeight : innerHeight;
+    return Math.max(h / ((s.y1 - s.y0) / 2), w / ((s.x1 - s.x0) / 2)) * fullH / (2 * tf); }
   const visH = v ? (v.fullHeight > v.height ? v.height - v.offsetY : v.height) : innerHeight, visW = v ? (v.fullWidth > v.width ? v.width - v.offsetX : v.width) : innerWidth, fullH = v ? v.fullHeight : innerHeight;
   const tv = tf * visH / fullH, th = tv * visW / visH; return Math.max(h / tv, w / th) * 1.1;
 }
 function viewOffset(on) {
   const W = innerWidth, H = innerHeight;
   if (!on) { camera.clearViewOffset(); camera.aspect = W / H; camera.updateProjectionMatrix(); return; }
+  if (SAFE) { const s = safeRect(), cx = (s.x0 + s.x1) / 2, cy = (s.y0 + s.y1) / 2, fw = 2 * Math.max(cx, W - cx), fh = 2 * Math.max(cy, H - cy);
+    camera.aspect = fw / fh; camera.setViewOffset(fw, fh, fw / 2 - cx, fh / 2 - cy, W, H); camera.updateProjectionMatrix(); return; }
   const r = L.getBoundingClientRect();
   if (W <= 760) { const h = Math.max(0, H - r.top); camera.aspect = W / (H + h); camera.setViewOffset(W, H + h, 0, h, W, H); }
   else { const w = W - r.left + 10; camera.aspect = (W + w) / H; camera.setViewOffset(W + w, H, w, 0, W, H); }
@@ -436,7 +455,8 @@ $('Lback').onclick = () => { if (idx > 0 && !S[idx].recall) { idx--; render(); }
 $('Lzh').onclick = () => { showZh = !showZh; $('Lzh').classList.toggle('on', showZh); body.querySelectorAll('.zh').forEach(z => z.style.display = showZh ? '' : 'none'); };
 $('Lexit').onclick = () => { location.href = './index.html'; };
 $('Lspeak').style.display = 'none';
-function showApp() { document.body.classList.add('lessonMode'); L.style.display = ''; viewOffset(true); CFG.setup(ctx); viewBtns(); timeHints(); }
+// F19: the view toolbar is created before the first view, so the safe area already knows where it sits
+function showApp() { document.body.classList.add('lessonMode'); L.style.display = ''; viewBtns(); viewOffset(true); CFG.setup(ctx); timeHints(); }
 
 // ---------------------------------------------------------------- context handed to lesson configs
 const ctx = { A, T, $, esc, wait, later, alive, shuffle, parts, memo, curio, frame, view, fitDist, label, clearLabels, nameLabels, centerOf, book, ossi, zh, aid, setNext, feedback, hidden,

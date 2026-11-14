@@ -2,7 +2,8 @@
 // Must-learn: the six names of the p. 25 drawing (locate, say, spell). Location hints ("Pista per trobar-lo") help
 // to find a bone and are never asked as knowledge.
 export default {
-  id: 'l03', title: 'Els ossos del braç i de la mà 🦴', subtitle: 'Lliçó 3 (llibre p. 25). Sis noms en dos grups. Tu manes el ritme. Uns 15 minuts.',
+  id: 'l03', safeFrame: true,   // F19 shared camera safe area (player.js)
+  title: 'Els ossos del braç i de la mà 🦴', subtitle: 'Lliçó 3 (llibre p. 25). Sis noms en dos grups. Tu manes el ritme. Uns 15 minuts.',
   hasReview: true, hasSay: true,
   units: {},
   book: {

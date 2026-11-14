@@ -7,7 +7,8 @@ const ZONE_ITEMS = [   // activitat 2, p. 25 (answer = colour of the label in th
   ['tars', 2, /^left (talus|calcaneus|cuboid bone|(medial|intermediate|lateral) cuneiform bone)$|^navicular bone of left foot$/], ['ròtula', 2, /^left patella$/], ['carp', 2, /^left (scaphoid|lunate|triquetr\w*|pisiform|trapezium|trapezoid|capitate|hamate)$/],
 ];
 export default {
-  id: 'l04', title: 'Els ossos de la cama i del peu 🦵', subtitle: 'Lliçó 4 (llibre p. 25). Set noms en tres grups i l’activitat 2 de les zones. Tu manes el ritme.',
+  id: 'l04', safeFrame: true,   // F19 shared camera safe area (player.js)
+  title: 'Els ossos de la cama i del peu 🦵', subtitle: 'Lliçó 4 (llibre p. 25). Set noms en tres grups i l’activitat 2 de les zones. Tu manes el ritme.',
   hasReview: true, hasSay: true,
   units: { U1: 'A les extremitats hi ha ossos llargs, com l’húmer i el fèmur', U2: 'A les mans i als peus hi ha molts ossos petits, les falanges', A2: 'Activitat 2: classificar ossos per zones (cap, tronc, extremitats)' },
   book: {

@@ -1,0 +1,186 @@
+('l03', 'braç', 'D1366') BASE {'H': 'cut:0.04', 'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.31', 'X': ['handL'], 'M': ['handR']} fillH 0.77->0.72
+('l03', 'braç', 'D1440') BASE {'H': 'cut:0.04', 'X': ['handL', 'handR']} NEW {'H': 'cut:0.31', 'X': ['handL', 'handR']} fillH 0.77->0.72
+('l03', 'braç', 'D1920') BASE {'H': 'cut:0.05', 'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.31', 'X': ['handL'], 'M': ['handR']} fillH 0.76->0.72
+('l03', 'braç', 'P393') BASE {'X': ['handL']} NEW {'H': 'cut:0.27', 'X': ['handR'], 'M': ['handL']} fillH 0.81->0.70
+('l03', 'braç', 'T1180L') BASE {'H': 'cut:0.04', 'X': ['handL']} NEW {'H': 'cut:0.31', 'X': ['handL']} fillH 0.77->0.72
+('l03', 'braç', 'T820P') BASE {'X': ['handL']} NEW {'X': ['handL']} fillH 0.76->0.72
+('l03', 'braçDarrere', 'D1366') BASE {'H': 'cut:0.13', 'M': ['handL']} NEW {'H': 'cut:0.35', 'M': ['handL']} fillH 0.76->0.71
+('l03', 'braçDarrere', 'D1440') BASE {'H': 'cut:0.14', 'M': ['handL']} NEW {'H': 'cut:0.35', 'M': ['handL']} fillH 0.75->0.71
+('l03', 'braçDarrere', 'D1920') BASE {'H': 'cut:0.15', 'M': ['handL']} NEW {'H': 'cut:0.35', 'M': ['handL']} fillH 0.75->0.71
+('l03', 'braçDarrere', 'P393') BASE {'M': ['handL']} NEW {'H': 'cut:0.28', 'M': ['handL', 'handR']} fillH 0.80->0.70
+('l03', 'braçDarrere', 'T1180L') BASE {'H': 'cut:0.13', 'M': ['handL', 'handR']} NEW {'H': 'cut:0.35', 'M': ['handL', 'handR']} fillH 0.76->0.71
+('l03', 'braçDarrere', 'T820P') BASE {'H': 'cut:0.08', 'M': ['handL']} NEW {'H': 'cut:0.08', 'M': ['handL']} fillH 0.75->0.71
+('l03', 'tot', 'D1366') BASE {} NEW {'H': 'cut:0.03'} fillH 0.99->0.93
+('l03', 'tot', 'D1440') BASE {} NEW {'H': 'cut:0.03'} fillH 0.99->0.93
+('l03', 'tot', 'D1920') BASE {} NEW {'H': 'cut:0.03'} fillH 0.98->0.93
+('l03', 'tot', 'P393') BASE {'T': 0.911} NEW {} fillH 1.05->0.91
+('l03', 'tot', 'T1180L') BASE {} NEW {'H': 'cut:0.03'} fillH 0.99->0.93
+('l03', 'tot', 'T820P') BASE {'X': ['handR']} NEW {'H': 'cut:0.03', 'X': ['handR']} fillH 0.98->0.93
+('l04', 'cama', 'D1366') BASE {'M': ['footL', 'footR']} NEW {'M': ['footL', 'footR']} fillH 0.94->0.88
+('l04', 'cama', 'D1440') BASE {'M': ['footL', 'footR']} NEW {'M': ['footL', 'footR']} fillH 0.94->0.88
+('l04', 'cama', 'D1920') BASE {'M': ['footL', 'footR']} NEW {'M': ['footL', 'footR']} fillH 0.93->0.88
+('l04', 'cama', 'P393') BASE {'T': 0.838, 'M': ['handL', 'handR', 'footL', 'footR']} NEW {} fillH 1.00->0.87
+('l04', 'cama', 'T1180L') BASE {'M': ['footL', 'footR']} NEW {'M': ['footL', 'footR']} fillH 0.94->0.88
+('l04', 'cama', 'T820P') BASE {'X': ['handL', 'footR'], 'M': ['footL']} NEW {'X': ['handL', 'footR'], 'M': ['footL']} fillH 0.93->0.88
+('l04', 'camaCostat', 'D1366') BASE {'M': ['footL']} NEW {'M': ['footL']} fillH 0.95->0.89
+('l04', 'camaCostat', 'D1440') BASE {'M': ['footL']} NEW {'M': ['footL']} fillH 0.94->0.89
+('l04', 'camaCostat', 'D1920') BASE {'M': ['footL']} NEW {'M': ['footL']} fillH 0.94->0.89
+('l04', 'camaCostat', 'P393') BASE {'T': 0.837, 'M': ['handL', 'handR', 'footL']} NEW {} fillH 1.00->0.87
+('l04', 'camaCostat', 'T1180L') BASE {'M': ['footL']} NEW {'M': ['footL']} fillH 0.95->0.89
+('l04', 'camaCostat', 'T820P') BASE {'M': ['footL', 'footR']} NEW {'M': ['footL', 'footR']} fillH 0.94->0.89
+('l04', 'camaDarrere', 'P393') BASE {'T': 0.838, 'X': ['handR'], 'M': ['handL']} NEW {} fillH 1.01->0.88
+('l04', 'camaDarrere', 'T820P') BASE {'X': ['handL', 'footR']} NEW {'X': ['handL', 'footR']} fillH 0.95->0.90
+('l04', 'cos', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l04', 'cos', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l04', 'cos', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.05->1.00
+('l04', 'cos', 'P393') BASE {'T': 0.6, 'M': ['head']} NEW {} fillH 1.12->0.98
+('l04', 'cos', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l04', 'cos', 'T820P') BASE {'T': 0.8} NEW {} fillH 0.63->0.54
+('l04', 'peu', 'D1366') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.78->0.71
+('l04', 'peu', 'D1440') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.71->0.65
+('l04', 'peu', 'D1920') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.88->0.82
+('l04', 'peu', 'P393') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.54->0.59
+('l04', 'peu', 'T1180L') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.58->0.52
+('l04', 'peu', 'T820P') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.21->0.18
+('l04', 'tot', 'D1366') BASE {'T': 0.892, 'M': ['handL', 'footL']} NEW {} fillH 1.04->0.97
+('l04', 'tot', 'D1440') BASE {'T': 0.892, 'M': ['handL', 'footL']} NEW {} fillH 1.03->0.97
+('l04', 'tot', 'D1920') BASE {'T': 0.895, 'M': ['handL', 'footL']} NEW {} fillH 1.03->0.97
+('l04', 'tot', 'P393') BASE {'T': 0.917, 'M': ['handL', 'handR']} NEW {} fillH 1.08->0.94
+('l04', 'tot', 'T1180L') BASE {'T': 0.893, 'M': ['handL', 'footL']} NEW {} fillH 1.03->0.97
+('l04', 'tot', 'T820P') BASE {'T': 0.895, 'X': ['footR'], 'M': ['handL', 'footL']} NEW {'X': ['footR']} fillH 1.03->0.97
+('l07', 'braç', 'D1366') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.12', 'X': ['handL'], 'M': ['handR']} fillH 0.80->0.75
+('l07', 'braç', 'D1440') BASE {'X': ['handL', 'handR']} NEW {'H': 'cut:0.12', 'X': ['handL', 'handR']} fillH 0.80->0.75
+('l07', 'braç', 'D1920') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.12', 'X': ['handL'], 'M': ['handR']} fillH 0.79->0.75
+('l07', 'braç', 'P393') BASE {'X': ['handL']} NEW {'H': 'cut:0.13', 'X': ['handR'], 'M': ['handL']} fillH 0.84->0.73
+('l07', 'braç', 'T1180L') BASE {'X': ['handL']} NEW {'H': 'cut:0.12', 'X': ['handL']} fillH 0.80->0.75
+('l07', 'braç', 'T820P') BASE {'H': 'cut:0.64'} NEW {'H': 'cut:0.69'} fillH 0.50->0.42
+('l07', 'cara', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cara', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cara', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cara', 'P393') BASE {'T': 0.6} NEW {} fillH 1.12->0.98
+('l07', 'cara', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cara', 'T820P') BASE {'T': 0.8} NEW {} fillH 0.67->0.57
+('l07', 'cos', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cos', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cos', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.05->1.00
+('l07', 'cos', 'P393') BASE {'T': 0.6, 'M': ['head']} NEW {} fillH 1.12->0.98
+('l07', 'cos', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'cos', 'T820P') BASE {'T': 0.8} NEW {} fillH 0.63->0.54
+('l07', 'esquena', 'D1366') BASE {'T': 0.6, 'H': 'cut:0.34'} NEW {'H': 'cut:0.60'} fillH 1.06->1.00
+('l07', 'esquena', 'D1440') BASE {'T': 0.6, 'H': 'cut:0.35'} NEW {'H': 'cut:0.60'} fillH 1.06->1.00
+('l07', 'esquena', 'D1920') BASE {'T': 0.6, 'H': 'cut:0.38'} NEW {'H': 'cut:0.60'} fillH 1.06->1.00
+('l07', 'esquena', 'P393') BASE {'T': 0.6, 'H': 'cut:0.04', 'M': ['handR']} NEW {'H': 'cut:0.63'} fillH 1.12->0.98
+('l07', 'esquena', 'T1180L') BASE {'T': 0.6, 'H': 'cut:0.34'} NEW {'H': 'cut:0.60'} fillH 1.06->1.00
+('l07', 'esquena', 'T820P') BASE {'T': 0.8, 'X': ['handL'], 'M': ['handR']} NEW {'X': ['handL'], 'M': ['handR']} fillH 0.67->0.57
+('l07', 'mig', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'mig', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'mig', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'mig', 'P393') BASE {'T': 0.48, 'M': ['head'], 'B': 0.08} NEW {} fillH 1.12->0.98
+('l07', 'mig', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l07', 'mig', 'T820P') BASE {'T': 0.8} NEW {} fillH 0.47->0.40
+('l07', 'peu', 'D1366') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.42->0.39
+('l07', 'peu', 'D1440') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.42->0.39
+('l07', 'peu', 'D1920') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.41->0.39
+('l07', 'peu', 'P393') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.44->0.38
+('l07', 'peu', 'T1180L') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.42->0.39
+('l07', 'peu', 'T820P') BASE {'X': ['footR']} NEW {'X': ['footR']} fillH 0.26->0.22
+('l07', 'tronc', 'D1366') BASE {'T': 0.6, 'H': 'cut:0.29', 'X': ['handL']} NEW {'H': 'cut:0.59', 'M': ['handL']} fillH 1.06->1.00
+('l07', 'tronc', 'D1440') BASE {'T': 0.6, 'H': 'cut:0.32', 'X': ['handL']} NEW {'H': 'cut:0.58', 'M': ['handL']} fillH 1.06->1.00
+('l07', 'tronc', 'D1920') BASE {'T': 0.6, 'H': 'cut:0.35', 'X': ['handL']} NEW {'H': 'cut:0.58', 'M': ['handL']} fillH 1.06->1.00
+('l07', 'tronc', 'P393') BASE {'T': 0.6, 'H': 'cut:0.04', 'M': ['handL']} NEW {'H': 'cut:0.63'} fillH 1.12->0.98
+('l07', 'tronc', 'T1180L') BASE {'T': 0.6, 'H': 'cut:0.31', 'X': ['handL']} NEW {'H': 'cut:0.58', 'M': ['handL']} fillH 1.06->1.00
+('l07', 'tronc', 'T820P') BASE {'T': 0.8, 'X': ['handR'], 'M': ['handL']} NEW {'X': ['handR'], 'M': ['handL']} fillH 0.67->0.57
+('l08', 'cap', 'D1366') BASE {'H': 'cut:0.91'} NEW {'M': ['head']} fillH 0.49->0.46
+('l08', 'cap', 'D1440') BASE {'H': 'cut:0.91'} NEW {'M': ['head']} fillH 0.49->0.46
+('l08', 'cap', 'D1920') BASE {'H': 'cut:0.92'} NEW {'M': ['head']} fillH 0.49->0.46
+('l08', 'cap', 'P393') BASE {'H': 'cut:0.81'} NEW {'H': 'cut:0.91'} fillH 0.51->0.44
+('l08', 'cap', 'T1180L') BASE {'H': 'cut:0.91'} NEW {'M': ['head']} fillH 0.49->0.46
+('l08', 'capCostat', 'D1366') BASE {'H': 'cut:0.88'} NEW {'H': 'cut:0.94'} fillH 0.48->0.45
+('l08', 'capCostat', 'D1440') BASE {'H': 'cut:0.88'} NEW {'H': 'cut:0.94'} fillH 0.48->0.45
+('l08', 'capCostat', 'D1920') BASE {'H': 'cut:0.89'} NEW {'H': 'cut:0.94'} fillH 0.48->0.45
+('l08', 'capCostat', 'P393') BASE {'H': 'cut:0.63'} NEW {'H': 'cut:0.89'} fillH 0.51->0.44
+('l08', 'capCostat', 'T1180L') BASE {'H': 'cut:0.88'} NEW {'H': 'cut:0.93'} fillH 0.48->0.45
+('l08', 'capCostat', 'T820P') BASE {'H': 'cut:0.87'} NEW {'H': 'cut:0.88'} fillH 0.22->0.19
+('l08', 'coll', 'D1366') BASE {'T': 0.974, 'H': 'cut:0.42'} NEW {'H': 'cut:0.59'} fillH 0.79->0.74
+('l08', 'coll', 'D1440') BASE {'T': 0.976, 'H': 'cut:0.44'} NEW {'H': 'cut:0.58'} fillH 0.79->0.74
+('l08', 'coll', 'D1920') BASE {'T': 0.978, 'H': 'cut:0.46'} NEW {'H': 'cut:0.58'} fillH 0.79->0.74
+('l08', 'coll', 'P393') BASE {'T': 0.924, 'H': 'cut:0.26', 'M': ['handR']} NEW {'H': 'cut:0.63', 'M': ['handR']} fillH 0.82->0.72
+('l08', 'coll', 'T1180L') BASE {'T': 0.975, 'H': 'cut:0.43'} NEW {'H': 'cut:0.59'} fillH 0.79->0.74
+('l08', 'coll', 'T820P') BASE {'M': ['head']} NEW {'X': ['handL'], 'M': ['handR']} fillH 0.54->0.46
+('l08', 'collDarrere', 'D1366') BASE {'H': 'cut:0.51', 'X': ['handR']} NEW {'H': 'cut:0.68', 'X': ['handR']} fillH 0.82->0.77
+('l08', 'collDarrere', 'D1440') BASE {'H': 'cut:0.53', 'X': ['handR']} NEW {'H': 'cut:0.68', 'X': ['handR']} fillH 0.81->0.77
+('l08', 'collDarrere', 'D1920') BASE {'H': 'cut:0.54', 'X': ['handR']} NEW {'H': 'cut:0.68', 'X': ['handR']} fillH 0.81->0.77
+('l08', 'collDarrere', 'P393') BASE {'T': 0.922, 'H': 'cut:0.29', 'X': ['handR']} NEW {'H': 'cut:0.66', 'X': ['handR']} fillH 0.90->0.78
+('l08', 'collDarrere', 'T1180L') BASE {'H': 'cut:0.52', 'X': ['handR']} NEW {'H': 'cut:0.68', 'X': ['handR']} fillH 0.81->0.77
+('l08', 'collDarrere', 'T820P') BASE {'M': ['head']} NEW {'X': ['handL']} fillH 0.57->0.49
+('l08', 'cos', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'cos', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'cos', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.05->1.00
+('l08', 'cos', 'P393') BASE {'T': 0.6, 'M': ['head']} NEW {} fillH 1.12->0.98
+('l08', 'cos', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'cos', 'T820P') BASE {'T': 0.8} NEW {} fillH 0.63->0.54
+('l08', 'darrere', 'P393') BASE {'T': 0.972} NEW {} fillH 0.97->0.84
+('l08', 'darrereCostat', 'P393') BASE {'T': 0.97} NEW {} fillH 0.98->0.85
+('l08', 'davant', 'D1366') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.04', 'X': ['handL'], 'M': ['handR']} fillH 0.83->0.78
+('l08', 'davant', 'D1440') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.04', 'X': ['handL'], 'M': ['handR']} fillH 0.82->0.78
+('l08', 'davant', 'D1920') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.04', 'X': ['handL'], 'M': ['handR']} fillH 0.82->0.78
+('l08', 'davant', 'P393') BASE {'X': ['handL', 'handR']} NEW {'H': 'cut:0.04', 'M': ['handL', 'handR']} fillH 0.89->0.78
+('l08', 'davant', 'T1180L') BASE {'X': ['handL', 'handR']} NEW {'H': 'cut:0.04', 'X': ['handL', 'handR']} fillH 0.83->0.78
+('l08', 'davant', 'T820P') BASE {'X': ['handL']} NEW {'H': 'cut:0.45', 'X': ['handL']} fillH 0.80->0.68
+('l08', 'davantCostat', 'D1366') BASE {'X': ['handL']} NEW {'H': 'cut:0.06', 'X': ['handL']} fillH 0.81->0.77
+('l08', 'davantCostat', 'D1440') BASE {'X': ['handL']} NEW {'H': 'cut:0.06', 'X': ['handL']} fillH 0.81->0.77
+('l08', 'davantCostat', 'D1920') BASE {'X': ['handL']} NEW {'H': 'cut:0.06', 'X': ['handL']} fillH 0.81->0.77
+('l08', 'davantCostat', 'P393') BASE {'X': ['handL'], 'M': ['handR']} NEW {'H': 'cut:0.04', 'X': ['handL']} fillH 0.88->0.77
+('l08', 'davantCostat', 'T1180L') BASE {'X': ['handL']} NEW {'H': 'cut:0.06', 'X': ['handL']} fillH 0.81->0.77
+('l08', 'davantCostat', 'T820P') BASE {'H': 'cut:0.03', 'X': ['handL', 'handR']} NEW {'H': 'cut:0.48', 'X': ['handR'], 'M': ['handL']} fillH 0.78->0.67
+('l08', 'totDarrere', 'D1366') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'totDarrere', 'D1440') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'totDarrere', 'D1920') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'totDarrere', 'P393') BASE {'T': 0.48, 'M': ['head'], 'B': 0.08} NEW {} fillH 1.12->0.98
+('l08', 'totDarrere', 'T1180L') BASE {'T': 0.6} NEW {} fillH 1.06->1.00
+('l08', 'totDarrere', 'T820P') BASE {'T': 0.8, 'M': ['footL', 'footR']} NEW {} fillH 0.53->0.45
+('l08', 'totDavant', 'D1366') BASE {'T': 0.6, 'M': ['handL']} NEW {'M': ['handL']} fillH 1.06->1.00
+('l08', 'totDavant', 'D1440') BASE {'T': 0.6, 'M': ['handL']} NEW {'M': ['handL']} fillH 1.06->1.00
+('l08', 'totDavant', 'D1920') BASE {'T': 0.6, 'M': ['handL']} NEW {'M': ['handL']} fillH 1.06->1.00
+('l08', 'totDavant', 'P393') BASE {'T': 0.48, 'M': ['head', 'handL'], 'B': 0.08} NEW {} fillH 1.12->0.98
+('l08', 'totDavant', 'T1180L') BASE {'T': 0.6, 'M': ['handL']} NEW {'M': ['handL']} fillH 1.06->1.00
+('l08', 'totDavant', 'T820P') BASE {'T': 0.8, 'X': ['footL'], 'M': ['footR']} NEW {} fillH 0.48->0.40
+cases (view x viewport): 186
+T target not fully in safe area    before  72  after   0  fixed  72  new   0
+H head cut by an edge              before  42  after  61  fixed   4  new  23
+X hand/foot cut by an edge         before  52  after  47  fixed   7  new   2
+B target under toolbar             before   3  after   0  fixed   3  new   0
+M head/hand/foot only in margin    before  52  after  43  fixed  21  new  12
+cases with no issue: before 55 after 105
+per view (union over viewports), after:
+  l03 braç           before HMX   after HMX
+  l03 braçDarrere    before HM    after HM
+  l03 ma             before -     after -
+  l03 maDarrere      before -     after -
+  l03 tot            before TX    after HX
+  l04 cama           before MTX   after MX
+  l04 camaCostat     before MT    after M
+  l04 camaDarrere    before MTX   after X
+  l04 cos            before MT    after -
+  l04 peu            before X     after X
+  l04 peuCostat      before -     after -
+  l04 tot            before MTX   after X
+  l07 braç           before HMX   after HMX
+  l07 cara           before T     after -
+  l07 cos            before MT    after -
+  l07 esquena        before HMTX  after HMX
+  l07 mig            before BMT   after -
+  l07 mà             before -     after -
+  l07 peu            before X     after X
+  l07 tronc          before HMTX  after HMX
+  l08 cap            before H     after HM
+  l08 capCostat      before H     after H
+  l08 coll           before HMT   after HMX
+  l08 collDarrere    before HMTX  after HX
+  l08 cos            before MT    after -
+  l08 darrere        before T     after -
+  l08 darrereCostat  before T     after -
+  l08 davant         before MX    after HMX
+  l08 davantCostat   before HMX   after HMX
+  l08 totDarrere     before BMT   after -
+  l08 totDavant      before BMTX  after M

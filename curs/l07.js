@@ -15,7 +15,8 @@ const RE = {
 };
 const L = re => new RegExp(re.source.replace(/\(left\|right\)/g, 'left'));
 export default {
-  id: 'l07', title: 'La forma dels músculs 🔍', subtitle: 'Lliçó 7 (llibre p. 26). Els quatre tipus de músculs: llargs, curts, anulars i plans.',
+  id: 'l07', safeFrame: true,   // F19 shared camera safe area (player.js)
+  title: 'La forma dels músculs 🔍', subtitle: 'Lliçó 7 (llibre p. 26). Els quatre tipus de músculs: llargs, curts, anulars i plans.',
   partWord: 'múscul',
   units: {
     T0: 'Hi ha quatre tipus principals de músculs esquelètics',

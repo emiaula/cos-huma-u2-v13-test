@@ -1,0 +1,4 @@
+{'steps': 144, 'toolbar buttons': 720, 'panel buttons': 936, 'toolbar function tests': 30}
+vps ['D1366', 'D1440', 'D1920', 'P393', 'T1180L', 'T820P'] lessons 12
+problems: 1
+  ('P393', 'l10', 'question:A-pregunta', 'panel button blocked', 'opt', 'Lnext')

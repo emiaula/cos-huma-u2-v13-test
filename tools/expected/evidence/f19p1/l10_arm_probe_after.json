@@ -1,0 +1,146 @@
+[
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 847,
+"y": 690,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "D1920",
+"step": "A-llibre"
+},
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 592,
+"y": 575,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "D1440",
+"step": "A-llibre"
+},
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 543,
+"y": 491,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "D1366",
+"step": "A-llibre"
+},
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 451,
+"y": 517,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "T1180L",
+"step": "A-llibre"
+},
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 240,
+"y": 648,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "T820P",
+"step": "A-llibre"
+},
+{
+"biceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"triceps": {
+"onScreen": 1,
+"underToolbar": 0
+},
+"elbow": {
+"x": 230,
+"y": 290,
+"underToolbar": false,
+"underPanel": false
+},
+"labelsUnderToolbar": [],
+"labels": [
+"b\u00edceps",
+"tr\u00edceps",
+"colze"
+],
+"vp": "P393",
+"step": "A-llibre"
+}
+]

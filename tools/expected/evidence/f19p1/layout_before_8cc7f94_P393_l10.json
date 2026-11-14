@@ -1,0 +1,229 @@
+[
+{
+"vp": "P393",
+"lesson": "l10",
+"step": "intro",
+"L": {
+"x0": 0,
+"y0": 468.0625,
+"x1": 393,
+"y1": 851
+},
+"V": {
+"x0": 341,
+"y0": 48,
+"x1": 385,
+"y1": 292
+},
+"overlap": 0,
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 341,
+"y1": 468.0625
+},
+"panel": [
+{
+"id": "Lzh",
+"w": 44,
+"h": 30,
+"ok": true,
+"by": null
+},
+{
+"id": "Lexit",
+"w": 29,
+"h": 30,
+"ok": true,
+"by": null
+},
+{
+"id": "Lback",
+"w": 38,
+"h": 46,
+"ok": true,
+"by": null
+},
+{
+"id": "Lskip",
+"w": 86,
+"h": 46,
+"ok": true,
+"by": null
+},
+{
+"id": "Lnext",
+"w": 237,
+"h": 46,
+"ok": true,
+"by": null
+}
+],
+"toolbar": [
+{
+"id": "Vrst",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vturn",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vin",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vout",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vtxt",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+}
+],
+"bodyFont": 15
+},
+{
+"vp": "P393",
+"lesson": "l10",
+"step": "question:A-pregunta",
+"L": {
+"x0": 0,
+"y0": 468.0625,
+"x1": 393,
+"y1": 851
+},
+"V": {
+"x0": 341,
+"y0": 48,
+"x1": 385,
+"y1": 292
+},
+"overlap": 0,
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 341,
+"y1": 468.0625
+},
+"panel": [
+{
+"id": "Lzh",
+"w": 44,
+"h": 30,
+"ok": true,
+"by": null
+},
+{
+"id": "Lexit",
+"w": 29,
+"h": 30,
+"ok": true,
+"by": null
+},
+{
+"id": "opt",
+"w": 365,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "opt",
+"w": 365,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "opt",
+"w": 365,
+"h": 44,
+"ok": false,
+"by": "Lnext"
+},
+{
+"id": "Lback",
+"w": 38,
+"h": 46,
+"ok": true,
+"by": null
+},
+{
+"id": "Lskip",
+"w": 86,
+"h": 46,
+"ok": true,
+"by": null
+},
+{
+"id": "Lnext",
+"w": 237,
+"h": 46,
+"ok": true,
+"by": null
+}
+],
+"toolbar": [
+{
+"id": "Vrst",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vturn",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vin",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vout",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+},
+{
+"id": "Vtxt",
+"w": 44,
+"h": 44,
+"ok": true,
+"by": null
+}
+],
+"bodyFont": 15,
+"toolbarWorks": {
+"Vin": true,
+"Vout": true,
+"Vturn": true,
+"Vrst": true,
+"Vtxt": true
+},
+"errs": []
+}
+]

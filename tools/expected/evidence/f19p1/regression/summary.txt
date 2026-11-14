@@ -1,0 +1,12 @@
+f17_race exit=0 secs=620 51 PASS · 0 FAIL
+f17_s1_review exit=0 secs=836 43 PASS · 0 FAIL
+b_scenarios exit=0 secs=241 24 PASS · 0 FAIL
+geo_probe exit=0 secs=252 12 PASS · 0 FAIL
+curs_l03 exit=0 secs=570 99 PASS · 0 FAIL
+curs_l04 exit=0 secs=532 132 PASS · 0 FAIL
+curs_l07 exit=0 secs=958 57 PASS · 0 FAIL
+curs_l08 exit=124 secs=2400 d2 step 6 tickers 2
+curs_l10 exit=0 secs=442 47 PASS · 0 FAIL
+curs_l01 exit=0 secs=380 56 PASS · 0 FAIL
+DONE
+curs_l08 (rerun, no 40-min limit) 152 PASS · 0 FAIL · same test on 8cc7f94: 152 PASS · 0 FAIL

@@ -32,7 +32,8 @@ details{margin-top:8px}pre{font-size:10.5px;white-space:pre-wrap;background:#fff
 body.lessonMode .panel,body.lessonMode .lesson,body.lessonMode .card{display:none!important}
 #labels{position:fixed;inset:0;pointer-events:none;z-index:3;overflow:hidden}
 .lbl{position:absolute;left:0;top:0;background:rgba(255,255,255,.92);color:#1d2733;font-size:12px;font-weight:600;padding:2px 7px;border-radius:10px;border:2px solid #2fd3ff;white-space:nowrap}
-.L{position:fixed;right:10px;top:30px;bottom:10px;width:390px;background:#fffdf7;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.35);z-index:7;display:flex;flex-direction:column;font-size:15px;overflow:hidden}
+:root{--Lw:390px}
+.L{position:fixed;right:10px;top:30px;bottom:10px;width:var(--Lw);background:#fffdf7;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.35);z-index:7;display:flex;flex-direction:column;font-size:15px;overflow:hidden}
 .Lhead{padding:8px 12px 6px;border-bottom:1px solid #eee6d6}
 .Lbar{height:5px;background:#eee6d6;border-radius:3px;overflow:hidden;margin-bottom:6px}.Lbar i{display:block;height:100%;background:linear-gradient(90deg,#35c46a,#2fd3ff);width:0;transition:width .4s}
 .Lrow{display:flex;align-items:center;gap:8px}.Lrow .grow{flex:1;font-size:12px;color:#5b6673;font-weight:600}
@@ -59,6 +60,8 @@ body.lessonMode .panel,body.lessonMode .lesson,body.lessonMode .card{display:non
 .self{margin-top:8px;padding:8px;border-radius:10px;background:#f2f8ff}.self .who{font-size:12px;font-weight:700;color:#1d3f8a;margin-bottom:4px}
 .toast{position:fixed;left:8px;right:60px;top:48px;z-index:9;background:#1d3f8a;color:#fff;border-radius:12px;padding:10px 12px;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.3);pointer-events:none;opacity:.94}.toast button{margin-left:8px;min-height:36px;pointer-events:auto}
 #Vbox{display:none;position:fixed;right:8px;top:48px;z-index:7;flex-direction:column;gap:6px}body.lessonMode #Vbox{display:flex}
+/* F19: the view toolbar sits inside the model area (never over the lesson panel); the toast too */
+body.lessonMode #Vbox{right:calc(var(--Lw) + 18px)}body.lessonMode .toast{right:calc(var(--Lw) + 70px)}
 #Vbox button{width:44px;height:44px;border-radius:12px;border:2px solid #d8d0bd;background:rgba(255,253,247,.92);font-size:18px;font-weight:700}
 body.bigtext #Lbody{font-size:118%}body.bigtext #Lbody .q{font-size:120%}.book.x{background:#f6f3ff;border-left-color:#8a6be0}
 .state{display:flex;gap:6px;margin:6px 0}.state span{flex:1;text-align:center;padding:6px;border-radius:8px;background:#f1ece0;font-weight:600;font-size:14px}.state span.on{background:#d2202f;color:#fff}
@@ -77,7 +80,7 @@ body.bigtext #Lbody{font-size:118%}body.bigtext #Lbody .q{font-size:120%}.book.x
 #Lstart h1{margin:0 0 4px;font-size:24px}#Lstart p{margin:4px 0 10px;color:#5b6673;line-height:1.4}
 #Lstart button{display:block;width:100%;min-height:50px;border-radius:14px;font-size:17px;margin:6px 0;border:2px solid #d8d0bd;background:#fff}
 #Lbegin{background:#ff7a00!important;border-color:#ff7a00!important;color:#fff;font-weight:700}
-@media (max-width:760px){.L{left:0;right:0;top:auto;bottom:0;width:auto;height:45%;border-radius:16px 16px 0 0}#Lbody h2{font-size:17px}.ossi{padding:6px 8px}.ossi .av{font-size:20px}}
+@media (max-width:760px){.L{left:0;right:0;top:auto;bottom:0;width:auto;height:45%;border-radius:16px 16px 0 0}body.lessonMode #Vbox{right:8px;top:auto;bottom:calc(45% + 8px);flex-direction:row}body.lessonMode .toast{right:8px}#Lbody h2{font-size:17px}.ossi{padding:6px 8px}.ossi .av{font-size:20px}}
 
 /* sample lesson (1A) */
 body.nomodel canvas,body.nomodel #labels{visibility:hidden}

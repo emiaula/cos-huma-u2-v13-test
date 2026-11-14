@@ -8,7 +8,8 @@ const fs = (c, keys, dir, pad) => {   // frame the shown (left) parts; dir.x > 0
   c.A.flyTo(m, new c.T.Vector3(dir[0] * s, dir[1], dir[2]).normalize().multiplyScalar(c.fitDist(sz.y / 2 * pad, Math.max(sz.x, sz.z) / 2 * pad)));
 };
 export default {
-  id: 'l08', title: 'Els músculs del cap i del tronc 🙂', subtitle: 'Lliçó 8 (llibre p. 27). Nou noms de músculs en quatre grups petits. Tu manes el ritme.',
+  id: 'l08', safeFrame: true,   // F19 shared camera safe area (player.js)
+  title: 'Els músculs del cap i del tronc 🙂', subtitle: 'Lliçó 8 (llibre p. 27). Nou noms de músculs en quatre grups petits. Tu manes el ritme.',
   partWord: 'múscul', hasReview: true, hasSay: true,
   units: { U1: 'Cap: músculs plans i anulars; per parlar, mastegar i gesticular', U2: 'Tronc: músculs grans i plans; mantenen dreta la columna i la flexionen, protegeixen l’abdomen i ajuden a respirar' },
   book: {
