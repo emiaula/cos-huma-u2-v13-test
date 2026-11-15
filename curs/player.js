@@ -39,9 +39,9 @@ const L = $('L'), body = $('Lbody');
 // really free for the model: below the banner, beside (or above) the lesson panel, clear of the view toolbar, with a
 // MARGIN on every side. The camera's centre is put on the centre of that area and the distance makes the given
 // half-height/half-width fit it. Lessons without the flag keep the original framing unchanged.
-const SAFE = !!CFG.safeFrame, MARGIN = .06;
+const SAFE = !!CFG.safeFrame, MARGIN = .06, MARGIN_PHONE = .03;   // phones (≤ 760 px, bottom-sheet layout): smaller margin (F19 option B)
 function safeRect() {
-  const f = freeRect(), mx = Math.max(0, f.x1 - f.x0) * MARGIN, my = Math.max(0, f.y1 - f.y0) * MARGIN;
+  const m = innerWidth <= 760 ? MARGIN_PHONE : MARGIN, f = freeRect(), mx = Math.max(0, f.x1 - f.x0) * m, my = Math.max(0, f.y1 - f.y0) * m;
   return { x0: f.x0 + mx, y0: f.y0 + my, x1: Math.max(f.x0 + mx + 1, f.x1 - mx), y1: Math.max(f.y0 + my + 1, f.y1 - my) };
 }
 function freeRect() {   // the part of the window where the model can be seen (no margin)

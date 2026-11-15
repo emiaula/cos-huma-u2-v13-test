@@ -1,0 +1,16 @@
+P393: views 31 · target inside 3 % safe area 31/31 · target inside model area 31/31 · head cut 0 · hand/foot cut 10 · target under toolbar 0 · labels on toolbar 5, on panel 0, off edge 0 · name sizes median 48.0 px, < 44 px 67/142
+   label on toolbar: l04 cama falanges 
+   label on toolbar: l04 camaCostat falanges 
+   label on toolbar: l04 camaDarrere falanges 
+   label on toolbar: l04 tot falanges 
+   label on toolbar: l04 cos falanges 
+P360: views 31 · target inside 3 % safe area 31/31 · target inside model area 31/31 · head cut 0 · hand/foot cut 10 · target under toolbar 0 · labels on toolbar 9, on panel 0, off edge 0 · name sizes median 40.5 px, < 44 px 78/142
+   label on toolbar: l04 cama metatars 
+   label on toolbar: l04 cama falanges 
+   label on toolbar: l04 camaCostat metatars 
+   label on toolbar: l04 camaCostat falanges 
+   label on toolbar: l04 camaDarrere metatars 
+   label on toolbar: l04 camaDarrere falanges 
+   label on toolbar: l04 tot falanges 
+   label on toolbar: l04 cos metatars 
+   label on toolbar: l04 cos falanges 

@@ -1,0 +1,303 @@
+[
+ {
+  "vp": "P393",
+  "shot": "cama",
+  "kind": "view",
+  "bones": {
+   "femur": {
+    "w": 41,
+    "h": 168,
+    "area": 2342,
+    "rayArea": 2342,
+    "side": 48
+   },
+   "rotula": {
+    "w": 15,
+    "h": 14,
+    "area": 340,
+    "rayArea": 132,
+    "side": 18
+   },
+   "tibia": {
+    "w": 27,
+    "h": 137,
+    "area": 1444,
+    "rayArea": 1444,
+    "side": 38
+   },
+   "perone": {
+    "w": 12,
+    "h": 138,
+    "area": 568,
+    "rayArea": 568,
+    "side": 24
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "camaCostat",
+  "kind": "view",
+  "bones": {
+   "femur": {
+    "w": 26,
+    "h": 168,
+    "area": 1952,
+    "rayArea": 1952,
+    "side": 44
+   },
+   "rotula": {
+    "w": 7,
+    "h": 14,
+    "area": 444,
+    "rayArea": 60,
+    "side": 21
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "camaDarrere",
+  "kind": "view",
+  "bones": {
+   "tibia": {
+    "w": 27,
+    "h": 136,
+    "area": 1276,
+    "rayArea": 1276,
+    "side": 36
+   },
+   "perone": {
+    "w": 13,
+    "h": 139,
+    "area": 632,
+    "rayArea": 632,
+    "side": 25
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "peu",
+  "kind": "view",
+  "bones": {
+   "tars": {
+    "w": 70,
+    "h": 95,
+    "area": 3352,
+    "rayArea": 3352,
+    "side": 58
+   },
+   "metatars": {
+    "w": 97,
+    "h": 92,
+    "area": 4853,
+    "rayArea": 4853,
+    "side": 70
+   },
+   "falangesPeu": {
+    "w": 104,
+    "h": 67,
+    "area": 8108,
+    "rayArea": 2908,
+    "side": 90
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "peuCostat",
+  "kind": "view",
+  "bones": {
+   "tars": {
+    "w": 139,
+    "h": 85,
+    "area": 6097,
+    "rayArea": 5677,
+    "side": 78
+   },
+   "metatars": {
+    "w": 130,
+    "h": 79,
+    "area": 5013,
+    "rayArea": 5013,
+    "side": 71
+   },
+   "falangesPeu": {
+    "w": 113,
+    "h": 50,
+    "area": 5528,
+    "rayArea": 2484,
+    "side": 74
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "tot",
+  "kind": "view",
+  "bones": {
+   "femur": {
+    "w": 36,
+    "h": 169,
+    "area": 2260,
+    "rayArea": 2260,
+    "side": 48
+   },
+   "rotula": {
+    "w": 12,
+    "h": 14,
+    "area": 472,
+    "rayArea": 104,
+    "side": 22
+   },
+   "tibia": {
+    "w": 25,
+    "h": 137,
+    "area": 1448,
+    "rayArea": 1448,
+    "side": 38
+   },
+   "perone": {
+    "w": 10,
+    "h": 139,
+    "area": 696,
+    "rayArea": 696,
+    "side": 26
+   },
+   "tars": {
+    "w": 27,
+    "h": 25,
+    "area": 1396,
+    "rayArea": 268,
+    "side": 37
+   },
+   "metatars": {
+    "w": 34,
+    "h": 21,
+    "area": 1576,
+    "rayArea": 316,
+    "side": 40
+   },
+   "falangesPeu": {
+    "w": 32,
+    "h": 9,
+    "area": 1072,
+    "rayArea": 144,
+    "side": 33
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "genoll_davant_p3",
+  "kind": "candidate",
+  "bones": {
+   "rotula": {
+    "w": 120,
+    "h": 116,
+    "area": 9708,
+    "rayArea": 9708,
+    "side": 99
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "genoll_davant_p5",
+  "kind": "candidate",
+  "bones": {
+   "rotula": {
+    "w": 72,
+    "h": 70,
+    "area": 3508,
+    "rayArea": 3508,
+    "side": 59
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "genoll_costat_p4",
+  "kind": "candidate",
+  "bones": {
+   "rotula": {
+    "w": 46,
+    "h": 87,
+    "area": 2464,
+    "rayArea": 2464,
+    "side": 50
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "camaBaixa_costat",
+  "kind": "candidate",
+  "bones": {
+   "tibia": {
+    "w": 52,
+    "h": 328,
+    "area": 8213,
+    "rayArea": 8213,
+    "side": 91
+   },
+   "perone": {
+    "w": 24,
+    "h": 335,
+    "area": 4479,
+    "rayArea": 4479,
+    "side": 67
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "camaBaixa_davant",
+  "kind": "candidate",
+  "bones": {
+   "tibia": {
+    "w": 66,
+    "h": 333,
+    "area": 8825,
+    "rayArea": 8825,
+    "side": 94
+   },
+   "perone": {
+    "w": 28,
+    "h": 335,
+    "area": 3510,
+    "rayArea": 3510,
+    "side": 59
+   }
+  }
+ },
+ {
+  "vp": "P393",
+  "shot": "peu_dalt",
+  "kind": "candidate",
+  "bones": {
+   "tars": {
+    "w": 115,
+    "h": 156,
+    "area": 8953,
+    "rayArea": 8953,
+    "side": 95
+   },
+   "metatars": {
+    "w": 162,
+    "h": 152,
+    "area": 13218,
+    "rayArea": 13218,
+    "side": 115
+   },
+   "falangesPeu": {
+    "w": 174,
+    "h": 114,
+    "area": 13713,
+    "rayArea": 8244,
+    "side": 117
+   }
+  }
+ }
+]

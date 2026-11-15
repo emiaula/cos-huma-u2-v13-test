@@ -6,7 +6,8 @@ Branch `f19-phase1`. Not merged, not deployed. Review the commit that contains t
 |---|---|---|
 | frozen technical baseline | `8cc7f94` (tag `f17-f18-accepted-8cc7f94`) | F17/F18 accepted by Codex round 4 (round-4 report text not archived — evidence gap, see `tools/expected/evidence/CODEX_R4_INDEX.md`) |
 | pilot | `856a79b` | shared toolbar layout + shared camera safe area, `safeFrame` on l03 l04 l07 l08 |
-| this commit | `f19-phase1` HEAD | declarative composition (`compose`) for 12 views of l03 l07 l08 |
+| composition | `38b013b` | declarative composition (`compose`) for 12 views of l03 l07 l08 |
+| this commit | `f19-phase1` HEAD | phone safe-area margin 3 % (option B) |
 
 ## 1. What changed since `856a79b`
 
@@ -54,3 +55,18 @@ another port for comparisons). Software rendering is slow: a view takes about 3 
 | M | measurement: region visibility ignores occlusion (a hidden hand counts as "in the picture") | known limit of `tools/f19_layout.py` |
 | G | GitHub push: `POST git-receive-pack` answers HTTP 403 (read works); see HANDOFF | needs the user |
 | R4 | Codex round-4 report text not archived | evidence gap kept open |
+
+## 4. Phone margin (option B, commit after `38b013b`)
+
+Change: `curs/player.js` `safeRect()` only — margin 3 % when `innerWidth <= 760` (the bottom-sheet layout), 6 %
+otherwise (`MARGIN_PHONE`). Nothing else in the runtime.
+
+| # | Check | Command | Expected | Evidence |
+|---|---|---|---|---|
+| B1 | only phone views of the safe-area lessons move | `tools/f19_layout.py cam` on `38b013b` and HEAD, 12 lessons, 6 viewports; `cam_compare.py` | 432 cases; 31 differ = the 31 views of l03 l04 l07 l08 on 393×851; the other 401 identical | `f19p1c/cam_compare_38b013b_vs_now.txt` |
+| B2 | phones 393×851 and 360×740: target, head, toolbar | `tools/f19_phase1/phone_check.py PORT OUT VP l03,l04,l07,l08` | target inside the 3 % safe area and the model area in 31/31; head cut 0; target under toolbar 0; framed height ×1.07 vs `38b013b` | `f19p1c/phone/` |
+| B3 | label/toolbar collisions on 360×740 | same | 9, recorded one by one, 1 occurs in the lesson flow | `f19p1c/label_toolbar_collisions_P360.md` |
+| B4 | lessons and F17 | `curs_test.py` l03 l04 l07 l08, `f17_race.py`, `geo_probe.py` | 0 FAIL | `f19p1c/regression/` |
+
+Open after this commit: label «falanges» partly under the toolbar in the `tot` help on phones (B3 #7); the
+small-bone todo (`f19p1c/small_bones/`); compose() full-vertex sampling (technical debt, not done).

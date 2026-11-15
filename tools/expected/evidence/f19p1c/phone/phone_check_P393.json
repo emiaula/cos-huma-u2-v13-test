@@ -1,0 +1,4575 @@
+[
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "braç",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.906,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 157.73863942256466,
+"y0": 49.10187500000004,
+"x1": 235.2613605774351,
+"y1": 396.960625
+},
+"fillH": 1.046,
+"fillW": 0.224,
+"regions": {
+"head": "out",
+"handL": "cut:0.35",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.3969,
+1.3169,
+3.4089
+],
+"target": [
+0.2037,
+1.1464,
+-0.0003
+],
+"sizes": {
+"humer": {
+"w": 65,
+"h": 199
+},
+"cubit": {
+"w": 21,
+"h": 164
+},
+"radi": {
+"w": 27,
+"h": 152
+},
+"carp": {
+"w": 31,
+"h": 19
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "húmer",
+"rect": [
+161,
+137,
+217,
+160
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "cúbit",
+"rect": [
+183,
+302,
+230,
+325
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "radi",
+"rect": [
+201,
+323,
+241,
+346
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "carp",
+"rect": [
+197,
+392,
+242,
+415
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "braçDarrere",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.9,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 148.53576458897777,
+"y0": 49.10187499999995,
+"x1": 244.4642354110209,
+"y1": 396.9606249999998
+},
+"fillH": 1.046,
+"fillW": 0.277,
+"regions": {
+"head": "out",
+"handL": "cut:0.37",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.6745,
+1.3127,
+-3.2405
+],
+"target": [
+0.2155,
+1.1506,
+0.0017
+],
+"sizes": {
+"humer": {
+"w": 60,
+"h": 202
+},
+"cubit": {
+"w": 47,
+"h": 160
+},
+"radi": {
+"w": 49,
+"h": 149
+},
+"carp": {
+"w": 30,
+"h": 19
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "húmer",
+"rect": [
+185,
+139,
+241,
+162
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "cúbit",
+"rect": [
+168,
+306,
+215,
+329
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "radi",
+"rect": [
+152,
+327,
+193,
+350
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "carp",
+"rect": [
+138,
+391,
+183,
+414
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "ma",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 101.67096026401704,
+"y0": 97.45905020106157,
+"x1": 268.58592968247166,
+"y1": 355.6205380042285
+},
+"fillH": 0.776,
+"fillW": 0.483,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.747,
+0.8106,
+1.4325
+],
+"target": [
+0.2714,
+0.8106,
+0.0735
+],
+"sizes": {
+"carp": {
+"w": 76,
+"h": 49
+},
+"metacarp": {
+"w": 127,
+"h": 126
+},
+"falanges": {
+"w": 167,
+"h": 189
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "carp",
+"rect": [
+167,
+110,
+212,
+133
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metacarp",
+"rect": [
+164,
+170,
+238,
+193
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+156,
+248,
+224,
+271
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "maDarrere",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 105.45959948314785,
+"y0": 91.85041800215976,
+"x1": 275.00995093901844,
+"y1": 348.8974132825912
+},
+"fillH": 0.773,
+"fillW": 0.49,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.8622,
+0.8106,
+-1.2394
+],
+"target": [
+0.2714,
+0.8106,
+0.0735
+],
+"sizes": {
+"carp": {
+"w": 76,
+"h": 51
+},
+"metacarp": {
+"w": 132,
+"h": 130
+},
+"falanges": {
+"w": 169,
+"h": 183
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "carp",
+"rect": [
+216,
+106,
+260,
+129
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metacarp",
+"rect": [
+179,
+169,
+253,
+192
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+155,
+248,
+223,
+271
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "tot",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.955,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 163.07634518440622,
+"y0": 49.10187499999957,
+"x1": 229.9236548155937,
+"y1": 396.960625
+},
+"fillH": 1.046,
+"fillW": 0.193,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+4.6675,
+1.2911,
+1.3719
+],
+"target": [
+0.2349,
+1.0694,
+0.0421
+],
+"sizes": {
+"humer": {
+"w": 33,
+"h": 154
+},
+"cubit": {
+"w": 34,
+"h": 125
+},
+"radi": {
+"w": 29,
+"h": 118
+},
+"carp": {
+"w": 16,
+"h": 15
+},
+"metacarp": {
+"w": 21,
+"h": 40
+},
+"falanges": {
+"w": 36,
+"h": 57
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "húmer",
+"rect": [
+184,
+114,
+240,
+137
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "cúbit",
+"rect": [
+189,
+242,
+236,
+265
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "radi",
+"rect": [
+192,
+263,
+232,
+286
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "carp",
+"rect": [
+176,
+311,
+221,
+334
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metacarp",
+"rect": [
+159,
+332,
+232,
+355
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+147,
+356,
+215,
+379
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "cama",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 176.96844776345625,
+"y0": 67.48733032323601,
+"x1": 218.26344623222647,
+"y1": 376.5871284669204
+},
+"fillH": 0.929,
+"fillW": 0.119,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "cut:1.00",
+"footR": "cut:1.00"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.9526,
+0.7929,
+6.2113
+],
+"target": [
+0.0911,
+0.4827,
+0.0063
+],
+"sizes": {
+"femur": {
+"w": 41,
+"h": 168
+},
+"rotula": {
+"w": 15,
+"h": 14
+},
+"tibia": {
+"w": 27,
+"h": 137
+},
+"perone": {
+"w": 12,
+"h": 138
+},
+"tars": {
+"w": 21,
+"h": 24
+},
+"metatars": {
+"w": 28,
+"h": 20
+},
+"falangesPeu": {
+"w": 30,
+"h": 9
+}
+},
+"tap": {
+"femur": {
+"area": 2342,
+"rayArea": 2342,
+"side": 48
+},
+"rotula": {
+"area": 340,
+"rayArea": 132,
+"side": 18
+},
+"tibia": {
+"area": 1444,
+"rayArea": 1444,
+"side": 38
+},
+"perone": {
+"area": 568,
+"rayArea": 568,
+"side": 24
+},
+"tars": {
+"area": 1148,
+"rayArea": 188,
+"side": 34
+},
+"metatars": {
+"area": 1484,
+"rayArea": 268,
+"side": 39
+},
+"falangesPeu": {
+"area": 1036,
+"rayArea": 140,
+"side": 32
+}
+},
+"labels": [
+{
+"t": "fèmur",
+"rect": [
+171,
+140,
+223,
+163
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "ròtula",
+"rect": [
+165,
+220,
+216,
+243
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tíbia",
+"rect": [
+169,
+291,
+212,
+314
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "peroné",
+"rect": [
+173,
+312,
+232,
+335
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tars",
+"rect": [
+173,
+369,
+213,
+392
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+164,
+390,
+233,
+413
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+164,
+411,
+232,
+434
+],
+"onToolbar": true,
+"hiddenByButtons": 0.69,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "camaCostat",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 182.68717334661466,
+"y0": 67.45208813998916,
+"x1": 211.81678163953467,
+"y1": 377.6633641639066
+},
+"fillH": 0.932,
+"fillW": 0.084,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "cut:1.00",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+6.4431,
+0.8002,
+1.2767
+],
+"target": [
+0.0911,
+0.4827,
+0.0063
+],
+"sizes": {
+"femur": {
+"w": 26,
+"h": 168
+},
+"rotula": {
+"w": 7,
+"h": 14
+},
+"tibia": {
+"w": 22,
+"h": 136
+},
+"perone": {
+"w": 10,
+"h": 138
+},
+"tars": {
+"w": 40,
+"h": 25
+},
+"metatars": {
+"w": 38,
+"h": 21
+},
+"falangesPeu": {
+"w": 33,
+"h": 10
+}
+},
+"tap": {
+"femur": {
+"area": 1952,
+"rayArea": 1952,
+"side": 44
+},
+"rotula": {
+"area": 444,
+"rayArea": 60,
+"side": 21
+},
+"tibia": {
+"area": 1388,
+"rayArea": 1388,
+"side": 37
+},
+"perone": {
+"area": 852,
+"rayArea": 852,
+"side": 29
+},
+"tars": {
+"area": 1808,
+"rayArea": 476,
+"side": 43
+},
+"metatars": {
+"area": 1584,
+"rayArea": 372,
+"side": 40
+},
+"falangesPeu": {
+"area": 1028,
+"rayArea": 164,
+"side": 32
+}
+},
+"labels": [
+{
+"t": "fèmur",
+"rect": [
+172,
+140,
+224,
+163
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "ròtula",
+"rect": [
+161,
+220,
+212,
+243
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tíbia",
+"rect": [
+175,
+290,
+217,
+313
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "peroné",
+"rect": [
+176,
+311,
+235,
+334
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tars",
+"rect": [
+177,
+368,
+217,
+391
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+144,
+389,
+213,
+412
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+127,
+410,
+195,
+433
+],
+"onToolbar": true,
+"hiddenByButtons": 0.53,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "camaDarrere",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 176.89959479278122,
+"y0": 67.36982809705086,
+"x1": 218.57497014946,
+"y1": 378.94932226272863
+},
+"fillH": 0.937,
+"fillW": 0.121,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.9526,
+0.7929,
+-6.1986
+],
+"target": [
+0.0911,
+0.4827,
+0.0063
+],
+"sizes": {
+"femur": {
+"w": 42,
+"h": 169
+},
+"rotula": {
+"w": 15,
+"h": 14
+},
+"tibia": {
+"w": 27,
+"h": 136
+},
+"perone": {
+"w": 13,
+"h": 139
+},
+"tars": {
+"w": 31,
+"h": 27
+},
+"metatars": {
+"w": 27,
+"h": 18
+},
+"falangesPeu": {
+"w": 28,
+"h": 9
+}
+},
+"tap": {
+"femur": {
+"area": 2419,
+"rayArea": 2419,
+"side": 49
+},
+"rotula": {
+"area": 324,
+"rayArea": 12,
+"side": 18
+},
+"tibia": {
+"area": 1276,
+"rayArea": 1276,
+"side": 36
+},
+"perone": {
+"area": 632,
+"rayArea": 632,
+"side": 25
+},
+"tars": {
+"area": 1828,
+"rayArea": 484,
+"side": 43
+},
+"metatars": {
+"area": 1308,
+"rayArea": 136,
+"side": 36
+},
+"falangesPeu": {
+"area": 832,
+"rayArea": 36,
+"side": 29
+}
+},
+"labels": [
+{
+"t": "fèmur",
+"rect": [
+171,
+140,
+223,
+163
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "ròtula",
+"rect": [
+171,
+219,
+223,
+242
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tíbia",
+"rect": [
+182,
+291,
+225,
+314
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "peroné",
+"rect": [
+166,
+312,
+224,
+335
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tars",
+"rect": [
+180,
+369,
+221,
+392
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+148,
+390,
+218,
+413
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+139,
+411,
+207,
+434
+],
+"onToolbar": true,
+"hiddenByButtons": 0.68,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "peu",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 145.75749352674393,
+"y0": 134.1789123244973,
+"x1": 249.69632762034027,
+"y1": 343.7031674557925
+},
+"fillH": 0.63,
+"fillW": 0.301,
+"regions": {
+"head": "out",
+"handL": "out",
+"handR": "out",
+"footL": "in",
+"footR": "cut:0.18"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.6029,
+1.1774,
+1.467
+],
+"target": [
+0.1072,
+0.0444,
+0.0508
+],
+"sizes": {
+"tars": {
+"w": 70,
+"h": 95
+},
+"metatars": {
+"w": 97,
+"h": 92
+},
+"falangesPeu": {
+"w": 104,
+"h": 67
+}
+},
+"tap": {
+"tars": {
+"area": 3352,
+"rayArea": 3352,
+"side": 58
+},
+"metatars": {
+"area": 4853,
+"rayArea": 4853,
+"side": 70
+},
+"falangesPeu": {
+"area": 8108,
+"rayArea": 2908,
+"side": 90
+}
+},
+"labels": [
+{
+"t": "tars",
+"rect": [
+164,
+171,
+205,
+194
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+165,
+231,
+235,
+254
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+161,
+290,
+229,
+313
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "peuCostat",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 65.84029611625142,
+"y0": 162.46871118493172,
+"x1": 319.19183292476674,
+"y1": 292.33903203255284
+},
+"fillH": 0.39,
+"fillW": 0.733,
+"regions": {
+"head": "out",
+"handL": "out",
+"handR": "out",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.8999,
+0.5822,
+0.23
+],
+"target": [
+0.1072,
+0.0444,
+0.0508
+],
+"sizes": {
+"tars": {
+"w": 139,
+"h": 85
+},
+"metatars": {
+"w": 130,
+"h": 79
+},
+"falangesPeu": {
+"w": 113,
+"h": 50
+}
+},
+"tap": {
+"tars": {
+"area": 6097,
+"rayArea": 5677,
+"side": 78
+},
+"metatars": {
+"area": 5013,
+"rayArea": 5013,
+"side": 71
+},
+"falangesPeu": {
+"area": 5528,
+"rayArea": 2484,
+"side": 74
+}
+},
+"labels": [
+{
+"t": "tars",
+"rect": [
+231,
+199,
+272,
+222
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+149,
+227,
+219,
+250
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+87,
+254,
+155,
+277
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "tot",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.995,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 172.96990690348696,
+"y0": 57.35292391838019,
+"x1": 226.0840284125578,
+"y1": 392.32040227776264
+},
+"fillH": 1.007,
+"fillW": 0.154,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+4.6209,
+0.7829,
+4.5709
+],
+"target": [
+0.1007,
+0.46,
+0.0507
+],
+"sizes": {
+"femur": {
+"w": 36,
+"h": 169
+},
+"rotula": {
+"w": 12,
+"h": 14
+},
+"tibia": {
+"w": 25,
+"h": 137
+},
+"perone": {
+"w": 10,
+"h": 139
+},
+"tars": {
+"w": 27,
+"h": 25
+},
+"metatars": {
+"w": 34,
+"h": 21
+},
+"falangesPeu": {
+"w": 32,
+"h": 9
+}
+},
+"tap": {
+"femur": {
+"area": 2260,
+"rayArea": 2260,
+"side": 48
+},
+"rotula": {
+"area": 472,
+"rayArea": 104,
+"side": 22
+},
+"tibia": {
+"area": 1448,
+"rayArea": 1448,
+"side": 38
+},
+"perone": {
+"area": 696,
+"rayArea": 696,
+"side": 26
+},
+"tars": {
+"area": 1396,
+"rayArea": 268,
+"side": 37
+},
+"metatars": {
+"area": 1576,
+"rayArea": 316,
+"side": 40
+},
+"falangesPeu": {
+"area": 1072,
+"rayArea": 144,
+"side": 33
+}
+},
+"labels": [
+{
+"t": "fèmur",
+"rect": [
+180,
+131,
+233,
+154
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "ròtula",
+"rect": [
+171,
+211,
+222,
+234
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tíbia",
+"rect": [
+180,
+282,
+223,
+305
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "peroné",
+"rect": [
+185,
+303,
+243,
+326
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tars",
+"rect": [
+183,
+361,
+224,
+384
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+162,
+382,
+232,
+405
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+153,
+403,
+221,
+426
+],
+"onToolbar": true,
+"hiddenByButtons": 0.38,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "cos",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 95.8084703407004,
+"y0": 49.10951695211895,
+"x1": 297.1915296592996,
+"y1": 396.9529830478811
+},
+"fillH": 1.046,
+"fillW": 0.582,
+"regions": {
+"head": "in",
+"handL": "in",
+"handR": "in",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0,
+1.02,
+12.8008
+],
+"target": [
+0,
+0.9,
+0
+],
+"sizes": {
+"femur": {
+"w": 22,
+"h": 85
+},
+"rotula": {
+"w": 8,
+"h": 7
+},
+"tibia": {
+"w": 14,
+"h": 70
+},
+"perone": {
+"w": 7,
+"h": 70
+},
+"tars": {
+"w": 13,
+"h": 13
+},
+"metatars": {
+"w": 14,
+"h": 10
+},
+"falangesPeu": {
+"w": 15,
+"h": 4
+}
+},
+"tap": {
+"femur": {
+"area": 588,
+"rayArea": 588,
+"side": 24
+},
+"rotula": {
+"area": 316,
+"rayArea": 36,
+"side": 18
+},
+"tibia": {
+"area": 380,
+"rayArea": 380,
+"side": 19
+},
+"perone": {
+"area": 140,
+"rayArea": 140,
+"side": 12
+},
+"tars": {
+"area": 688,
+"rayArea": 76,
+"side": 26
+},
+"metatars": {
+"area": 624,
+"rayArea": 52,
+"side": 25
+},
+"falangesPeu": {
+"area": 544,
+"rayArea": 28,
+"side": 23
+}
+},
+"labels": [
+{
+"t": "fèmur",
+"rect": [
+187,
+252,
+239,
+275
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "ròtula",
+"rect": [
+186,
+292,
+237,
+315
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tíbia",
+"rect": [
+188,
+328,
+231,
+351
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "peroné",
+"rect": [
+186,
+349,
+245,
+372
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "tars",
+"rect": [
+191,
+370,
+231,
+393
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "metatars",
+"rect": [
+183,
+391,
+252,
+414
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "falanges",
+"rect": [
+186,
+412,
+254,
+435
+],
+"onToolbar": true,
+"hiddenByButtons": 0.7,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "cos",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 95.8084703407004,
+"y0": 49.10951695211895,
+"x1": 297.1915296592996,
+"y1": 396.9529830478811
+},
+"fillH": 1.046,
+"fillW": 0.582,
+"regions": {
+"head": "in",
+"handL": "in",
+"handR": "in",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0,
+1.02,
+12.8008
+],
+"target": [
+0,
+0.9,
+0
+],
+"sizes": {
+"llarg": {
+"w": 85,
+"h": 64
+},
+"curt": {
+"w": 112,
+"h": 163
+},
+"anular": {
+"w": 20,
+"h": 20
+},
+"pla": {
+"w": 72,
+"h": 132
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "múscul llarg del braç",
+"rect": [
+161,
+148,
+299,
+171
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul curt",
+"rect": [
+153,
+226,
+240,
+249
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul anular",
+"rect": [
+152,
+83,
+252,
+106
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul pla",
+"rect": [
+156,
+178,
+237,
+201
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "braç",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.908,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 157.88141883913582,
+"y0": 49.101875000000184,
+"x1": 235.11858116086367,
+"y1": 396.9606250000001
+},
+"fillH": 1.046,
+"fillW": 0.223,
+"regions": {
+"head": "out",
+"handL": "cut:0.36",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.397,
+1.4873,
+3.41
+],
+"target": [
+0.2038,
+1.1464,
+0.0008
+],
+"sizes": {},
+"tap": {},
+"labels": []
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "mà",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 119.30210699644682,
+"y0": 116.89641966569883,
+"x1": 257.52670354279985,
+"y1": 333.79252277056247
+},
+"fillH": 0.652,
+"fillW": 0.4,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.7742,
+0.8944,
+1.7494
+],
+"target": [
+0.2714,
+0.8106,
+0.0735
+],
+"sizes": {},
+"tap": {},
+"labels": []
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "peu",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 140.76361162939105,
+"y0": 170.93158749536406,
+"x1": 231.2059033486104,
+"y1": 306.92539696667683
+},
+"fillH": 0.409,
+"fillW": 0.262,
+"regions": {
+"head": "out",
+"handL": "out",
+"handR": "out",
+"footL": "in",
+"footR": "cut:0.51"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.9653,
+-1.2534,
+1.5524
+],
+"target": [
+0.1072,
+0.0337,
+0.0508
+],
+"sizes": {},
+"tap": {},
+"labels": []
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "cara",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 100.83884374999984,
+"y0": 49.101874999999715,
+"x1": 292.1611562499999,
+"y1": 396.96062499999994
+},
+"fillH": 1.046,
+"fillW": 0.553,
+"regions": {
+"head": "in",
+"handL": "out",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.4896,
+1.6979,
+1.9885
+],
+"target": [
+0,
+1.6,
+0.03
+],
+"sizes": {
+"anular": {
+"w": 123,
+"h": 130
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "múscul anular",
+"rect": [
+166,
+221,
+266,
+244
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "mig",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 61.5547952586209,
+"y0": 49.1018749999999,
+"x1": 331.4452047413795,
+"y1": 396.9606249999999
+},
+"fillH": 1.046,
+"fillW": 0.78,
+"regions": {
+"head": "in",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+2.2931,
+1.5739,
+7.477
+],
+"target": [
+0.05,
+1.2,
+0
+],
+"sizes": {
+"llarg": {
+"w": 135,
+"h": 105
+},
+"anular": {
+"w": 31,
+"h": 33
+},
+"pla": {
+"w": 112,
+"h": 218
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "múscul llarg del braç",
+"rect": [
+165,
+199,
+303,
+222
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul anular",
+"rect": [
+134,
+93,
+233,
+116
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul pla",
+"rect": [
+137,
+248,
+218,
+271
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "tronc",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.8,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 114.95754898918145,
+"y0": 100.44262132429613,
+"x1": 278.0424510108186,
+"y1": 396.960625
+},
+"fillH": 0.891,
+"fillW": 0.472,
+"regions": {
+"head": "cut:1.00",
+"handL": "cut:1.00",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+3.4111,
+1.507,
+5.6851
+],
+"target": [
+0.0131,
+1.2239,
+0.0219
+],
+"sizes": {
+"llarg": {
+"w": 146,
+"h": 126
+},
+"anular": {
+"w": 34,
+"h": 39
+},
+"pla": {
+"w": 118,
+"h": 257
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "múscul llarg del braç",
+"rect": [
+182,
+205,
+320,
+228
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul anular",
+"rect": [
+140,
+79,
+240,
+102
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul pla",
+"rect": [
+147,
+263,
+228,
+286
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "esquena",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.8,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 114.96028011454227,
+"y0": 100.45255268924551,
+"x1": 278.03971988545726,
+"y1": 396.96062500000005
+},
+"fillH": 0.891,
+"fillW": 0.472,
+"regions": {
+"head": "cut:1.00",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+2.4619,
+1.5306,
+-6.1548
+],
+"target": [
+0.0029,
+1.2232,
+-0.0071
+],
+"sizes": {
+"llarg": {
+"w": 156,
+"h": 125
+},
+"anular": {
+"w": 35,
+"h": 38
+},
+"pla": {
+"w": 128,
+"h": 254
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "múscul llarg del braç",
+"rect": [
+66,
+204,
+204,
+227
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul anular",
+"rect": [
+125,
+80,
+225,
+103
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "múscul pla",
+"rect": [
+150,
+261,
+231,
+284
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "cap",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 157.22832409103523,
+"y0": 201.92166387695767,
+"x1": 271.5105003016652,
+"y1": 370.41178808089785
+},
+"fillH": 0.506,
+"fillW": 0.33,
+"regions": {
+"head": "cut:1.00",
+"handL": "out",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0.497,
+1.6736,
+1.4195
+],
+"target": [
+0.0179,
+1.6052,
+0.0506
+],
+"sizes": {
+"orbicular": {
+"w": 165,
+"h": 83
+},
+"masseter": {
+"w": 197,
+"h": 115
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+115,
+231,
+279,
+254
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+208,
+304,
+280,
+327
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "capCostat",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 58.17167306740264,
+"y0": 207.74954597783665,
+"x1": 200.1762816450139,
+"y1": 377.5026393410333
+},
+"fillH": 0.51,
+"fillW": 0.411,
+"regions": {
+"head": "cut:1.00",
+"handL": "out",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.319,
+1.7364,
+0.6599
+],
+"target": [
+0.0368,
+1.6082,
+0.0188
+],
+"sizes": {
+"orbicular": {
+"w": 98,
+"h": 90
+},
+"masseter": {
+"w": 142,
+"h": 125
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+8,
+237,
+172,
+260
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+124,
+313,
+196,
+336
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "coll",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.999,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 142.77095764269572,
+"y0": 133.60855490646998,
+"x1": 270.9550635777755,
+"y1": 396.9606249999999
+},
+"fillH": 0.792,
+"fillW": 0.371,
+"regions": {
+"head": "cut:1.00",
+"handL": "out",
+"handR": "cut:0.06",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+2.8772,
+3.3042,
+0.4289
+],
+"target": [
+0.0508,
+1.467,
+0.0049
+],
+"sizes": {
+"orbicular": {
+"w": 29,
+"h": 57
+},
+"masseter": {
+"w": 42,
+"h": 75
+},
+"ecm": {
+"w": 88,
+"h": 149
+},
+"trapezi": {
+"w": 99,
+"h": 264
+},
+"deltoide": {
+"w": 112,
+"h": 234
+},
+"pectoral": {
+"w": 116,
+"h": 198
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+55,
+133,
+219,
+156
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+129,
+165,
+201,
+188
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+112,
+197,
+259,
+220
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+202,
+283,
+260,
+306
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+190,
+318,
+255,
+341
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+124,
+339,
+190,
+362
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "collDarrere",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.999,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 134.00108383035675,
+"y0": 134.85160966003443,
+"x1": 248.3001667241551,
+"y1": 396.9606250001956
+},
+"fillH": 0.788,
+"fillW": 0.33,
+"regions": {
+"head": "cut:1.00",
+"handL": "out",
+"handR": "out",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+3.3937,
+2.615,
+-1.189
+],
+"target": [
+0.0596,
+1.4481,
+-0.0221
+],
+"sizes": {
+"orbicular": {
+"w": 35,
+"h": 42
+},
+"masseter": {
+"w": 50,
+"h": 54
+},
+"ecm": {
+"w": 83,
+"h": 126
+},
+"trapezi": {
+"w": 104,
+"h": 269
+},
+"deltoide": {
+"w": 138,
+"h": 168
+},
+"pectoral": {
+"w": 135,
+"h": 159
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+55,
+111,
+219,
+134
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+120,
+145,
+192,
+168
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+105,
+184,
+252,
+207
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+174,
+271,
+233,
+294
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+141,
+292,
+206,
+315
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+101,
+313,
+166,
+336
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "davant",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.997,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 161.25798755936654,
+"y0": 171.7222876970122,
+"x1": 249.78387320796338,
+"y1": 396.960625
+},
+"fillH": 0.677,
+"fillW": 0.256,
+"regions": {
+"head": "cut:1.00",
+"handL": "cut:0.47",
+"handR": "cut:0.64",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.7135,
+1.5626,
+5.517
+],
+"target": [
+0.0788,
+1.2902,
+0.0682
+],
+"sizes": {
+"orbicular": {
+"w": 42,
+"h": 21
+},
+"masseter": {
+"w": 51,
+"h": 27
+},
+"ecm": {
+"w": 56,
+"h": 83
+},
+"trapezi": {
+"w": 129,
+"h": 182
+},
+"deltoide": {
+"w": 177,
+"h": 70
+},
+"pectoral": {
+"w": 151,
+"h": 98
+},
+"abdominal": {
+"w": 63,
+"h": 161
+},
+"dorsal": {
+"w": 142,
+"h": 159
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+93,
+86,
+258,
+109
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+151,
+107,
+223,
+130
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+110,
+133,
+257,
+156
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+181,
+182,
+239,
+205
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+204,
+203,
+269,
+226
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+172,
+224,
+237,
+247
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+139,
+306,
+217,
+329
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+188,
+269,
+242,
+292
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "davantCostat",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.996,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 153.99403441221892,
+"y0": 172.34387624151117,
+"x1": 239.00596558778088,
+"y1": 396.96062499999994
+},
+"fillH": 0.675,
+"fillW": 0.246,
+"regions": {
+"head": "cut:1.00",
+"handL": "cut:0.41",
+"handR": "cut:0.72",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+4.9362,
+1.5343,
+2.965
+],
+"target": [
+0.0665,
+1.2908,
+0.0432
+],
+"sizes": {
+"orbicular": {
+"w": 28,
+"h": 21
+},
+"masseter": {
+"w": 39,
+"h": 28
+},
+"ecm": {
+"w": 57,
+"h": 83
+},
+"trapezi": {
+"w": 82,
+"h": 184
+},
+"deltoide": {
+"w": 116,
+"h": 73
+},
+"pectoral": {
+"w": 108,
+"h": 98
+},
+"abdominal": {
+"w": 46,
+"h": 162
+},
+"dorsal": {
+"w": 93,
+"h": 162
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+91,
+86,
+255,
+109
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+154,
+107,
+226,
+130
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+125,
+133,
+271,
+156
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+201,
+183,
+259,
+206
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+205,
+204,
+270,
+227
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+161,
+225,
+227,
+248
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+134,
+306,
+213,
+329
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+208,
+272,
+262,
+295
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "darrere",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 145.00714752639664,
+"y0": 71.66398819499629,
+"x1": 247.23679817439196,
+"y1": 371.37061636466495
+},
+"fillH": 0.901,
+"fillW": 0.296,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+1.4241,
+1.267,
+-4.4939
+],
+"target": [
+0.0912,
+1.0448,
+-0.0507
+],
+"sizes": {
+"pectoral": {
+"w": 185,
+"h": 115
+},
+"abdominal": {
+"w": 75,
+"h": 196
+},
+"dorsal": {
+"w": 175,
+"h": 204
+},
+"gluti": {
+"w": 137,
+"h": 133
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "pectoral",
+"rect": [
+142,
+84,
+208,
+107
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+162,
+200,
+240,
+223
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+170,
+162,
+224,
+185
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "gluti",
+"rect": [
+184,
+295,
+227,
+318
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "darrereCostat",
+"kind": "parts",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 1,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 153.76670389052344,
+"y0": 70.92952650627586,
+"x1": 235.58737650280904,
+"y1": 373.432703671708
+},
+"fillH": 0.909,
+"fillW": 0.237,
+"regions": {
+"head": "out",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+4.2408,
+1.2523,
+-2.1256
+],
+"target": [
+0.0912,
+1.0448,
+-0.0507
+],
+"sizes": {
+"pectoral": {
+"w": 122,
+"h": 116
+},
+"abdominal": {
+"w": 54,
+"h": 196
+},
+"dorsal": {
+"w": 105,
+"h": 202
+},
+"gluti": {
+"w": 85,
+"h": 137
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "pectoral",
+"rect": [
+107,
+84,
+173,
+107
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+106,
+201,
+184,
+224
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+170,
+162,
+224,
+185
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "gluti",
+"rect": [
+179,
+295,
+222,
+318
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "totDavant",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 62.70817307692323,
+"y0": 49.101875,
+"x1": 330.29182692307705,
+"y1": 396.960625
+},
+"fillH": 1.046,
+"fillW": 0.774,
+"regions": {
+"head": "in",
+"handL": "cut:1.00",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+2.3121,
+1.5803,
+6.606
+],
+"target": [
+0,
+1.25,
+0
+],
+"sizes": {
+"orbicular": {
+"w": 34,
+"h": 17
+},
+"masseter": {
+"w": 42,
+"h": 23
+},
+"ecm": {
+"w": 46,
+"h": 69
+},
+"trapezi": {
+"w": 106,
+"h": 151
+},
+"deltoide": {
+"w": 145,
+"h": 58
+},
+"pectoral": {
+"w": 123,
+"h": 80
+},
+"abdominal": {
+"w": 52,
+"h": 133
+},
+"dorsal": {
+"w": 116,
+"h": 132
+},
+"gluti": {
+"w": 91,
+"h": 92
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+114,
+96,
+279,
+119
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+171,
+117,
+242,
+140
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+131,
+138,
+278,
+161
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+198,
+175,
+256,
+198
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+215,
+196,
+280,
+219
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+188,
+217,
+253,
+240
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+159,
+277,
+238,
+300
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+204,
+247,
+258,
+270
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "gluti",
+"rect": [
+203,
+335,
+246,
+358
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "totDarrere",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 76.54870689655135,
+"y0": 49.10187500000004,
+"x1": 316.4512931034478,
+"y1": 396.9606249999999
+},
+"fillH": 1.046,
+"fillW": 0.694,
+"regions": {
+"head": "in",
+"handL": "in",
+"handR": "in",
+"footL": "out",
+"footR": "out"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+2.5789,
+1.5684,
+-7.3683
+],
+"target": [
+0,
+1.2,
+0
+],
+"sizes": {
+"orbicular": {
+"w": 30,
+"h": 15
+},
+"masseter": {
+"w": 37,
+"h": 20
+},
+"ecm": {
+"w": 42,
+"h": 61
+},
+"trapezi": {
+"w": 95,
+"h": 137
+},
+"deltoide": {
+"w": 130,
+"h": 52
+},
+"pectoral": {
+"w": 111,
+"h": 69
+},
+"abdominal": {
+"w": 45,
+"h": 119
+},
+"dorsal": {
+"w": 104,
+"h": 122
+},
+"gluti": {
+"w": 82,
+"h": 80
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+97,
+93,
+261,
+116
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+142,
+114,
+214,
+137
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+112,
+135,
+259,
+158
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+148,
+165,
+206,
+188
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+121,
+186,
+186,
+209
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+129,
+207,
+194,
+230
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+137,
+252,
+216,
+275
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+149,
+230,
+203,
+253
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "gluti",
+"rect": [
+159,
+310,
+203,
+333
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "cos",
+"kind": "region",
+"free": {
+"x0": 0,
+"y0": 38,
+"x1": 393,
+"y1": 416.0625
+},
+"safe": {
+"x0": 23.58,
+"y0": 60.68375,
+"x1": 369.42,
+"y1": 393.37875
+},
+"inSafe": 0.6,
+"inFree": 1,
+"underToolbar": 0,
+"bbox": {
+"x0": 95.8084703407004,
+"y0": 49.10951695211895,
+"x1": 297.1915296592996,
+"y1": 396.9529830478811
+},
+"fillH": 1.046,
+"fillW": 0.582,
+"regions": {
+"head": "in",
+"handL": "in",
+"handR": "in",
+"footL": "in",
+"footR": "in"
+},
+"cam": {
+"fov": 30,
+"aspect": 0.3129136601144563,
+"view": [
+393,
+1255.9375,
+0,
+404.9375,
+393,
+851
+]
+},
+"pos": [
+0,
+1.02,
+12.8008
+],
+"target": [
+0,
+0.9,
+0
+],
+"sizes": {
+"orbicular": {
+"w": 20,
+"h": 9
+},
+"masseter": {
+"w": 23,
+"h": 12
+},
+"ecm": {
+"w": 23,
+"h": 37
+},
+"trapezi": {
+"w": 60,
+"h": 83
+},
+"deltoide": {
+"w": 84,
+"h": 31
+},
+"pectoral": {
+"w": 72,
+"h": 42
+},
+"abdominal": {
+"w": 30,
+"h": 74
+},
+"dorsal": {
+"w": 67,
+"h": 74
+},
+"gluti": {
+"w": 52,
+"h": 49
+}
+},
+"tap": {},
+"labels": [
+{
+"t": "orbicular de les parpelles",
+"rect": [
+120,
+83,
+284,
+106
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "masseter",
+"rect": [
+169,
+104,
+241,
+127
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "esternoclidomastoidal",
+"rect": [
+129,
+125,
+276,
+148
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "trapezi",
+"rect": [
+182,
+146,
+240,
+169
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "deltoide",
+"rect": [
+192,
+167,
+258,
+190
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "pectoral",
+"rect": [
+182,
+188,
+248,
+211
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "abdominal",
+"rect": [
+164,
+230,
+243,
+253
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "dorsal",
+"rect": [
+186,
+209,
+240,
+232
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+},
+{
+"t": "gluti",
+"rect": [
+188,
+251,
+231,
+274
+],
+"onToolbar": false,
+"hiddenByButtons": 0,
+"onPanel": false,
+"outside": false
+}
+]
+}
+]

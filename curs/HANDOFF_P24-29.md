@@ -277,6 +277,29 @@ with images, no mechanical cropping; no change to content, scoring, records, mod
   or grants write access.
 - Review pack: `tools/f19_review/F19P1_REVIEW_PACK.md`; evidence `tools/expected/evidence/f19p1b/`.
 
+## F19 phase 1 · phone margin, option B (2026-11-15, branch `f19-phase1`, on top of `38b013b`)
+
+User approval 11-15: phone safe margin 6 % → 3 %, `safeRect()` only.
+- `player.js`: `MARGIN_PHONE = .03` used when `innerWidth <= 760` (same breakpoint as the bottom-sheet CSS).
+- 393×851 and 360×740, l03 l04 l07 l08 (31 views each): target inside the safe area and the model area 31/31, head
+  cut 0, target under toolbar 0; model ×1.07 vs `38b013b`; names with smaller side < 44 px 69 → 67 (393) and
+  80 → 78 (360). Camera of everything else (desktop, tablets, other lessons) identical to `38b013b` (401/401).
+- Label/toolbar collisions on 360×740: 9, registered one by one (`f19p1c/label_toolbar_collisions_P360.md`); one
+  occurs in the lesson (help label «falanges» in `tot`, 57 % hidden, reading only). Not fixed.
+- Regression: f17_race, geo_probe, curs_test l03 l04 l07 l08 — see review pack section 4.
+
+**Todo F19-15 · phone small-bone tapping (read-only evaluation done, nothing changed).** l04 on phones under the
+unchanged scoring rule: kneecap ≈ 20 px square in every view where it is asked (cama, camaCostat, tot), fibula
+≈ 22–26 px, foot bones 30–40 px in `tot` (review and day-2). Close-ups composed with the existing `compose()`:
+knee at pad 5 → kneecap 49–59 px, lower leg from the side → fibula 54–67 px, foot from above → 79–117 px
+(`f19p1c/small_bones/`). Proposal for approval: per-item views in the review stage (already supported by
+`reviewStage(keys, view, viewFor)`) and in the day-2 tap items; the scored group step needs either a different
+`viewAlt` for groups 1–2 or a per-item view option in `nameGroupStages` (shared change).
+
+**Technical debt F19-16 · compose() sampling.** Head region uses 1 vertex in 10 (whole-head views may sit up to
+3.7 px inside the margin); targets over 8000 vertices would be sampled. Use all vertices or precomputed extreme
+points. Not done in this round.
+
 ## How to re-verify (independent reviewer)
 
 Start the local server:
