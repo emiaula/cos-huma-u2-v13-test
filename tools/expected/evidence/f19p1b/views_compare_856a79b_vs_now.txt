@@ -1,0 +1,39 @@
+cases (view x viewport): 186
+T target not fully in safe area    before   0  after   0  fixed   0  new   0
+H head cut by an edge              before  61  after   0  fixed  61  new   0
+X hand/foot cut by an edge         before  47  after  53  fixed   7  new  13
+B target under toolbar             before   0  after   0  fixed   0  new   0
+M head/hand/foot only in margin    before  43  after  24  fixed  23  new   4
+cases with no issue: before 105 after 133
+per view (union over viewports), after:
+  l03 braç           before HMX   after X
+  l03 braçDarrere    before HM    after X
+  l03 ma             before -     after -
+  l03 maDarrere      before -     after -
+  l03 tot            before HX    after X
+  l04 cama           before MX    after MX
+  l04 camaCostat     before M     after M
+  l04 camaDarrere    before X     after X
+  l04 cos            before -     after -
+  l04 peu            before X     after X
+  l04 peuCostat      before -     after -
+  l04 tot            before X     after X
+  l07 braç           before HMX   after X
+  l07 cara           before -     after -
+  l07 cos            before -     after -
+  l07 esquena        before HMX   after MX
+  l07 mig            before -     after -
+  l07 mà             before -     after -
+  l07 peu            before X     after X
+  l07 tronc          before HMX   after MX
+  l08 cap            before HM    after -
+  l08 capCostat      before H     after -
+  l08 coll           before HMX   after X
+  l08 collDarrere    before HX    after X
+  l08 cos            before -     after -
+  l08 darrere        before -     after -
+  l08 darrereCostat  before -     after -
+  l08 davant         before HMX   after X
+  l08 davantCostat   before HMX   after MX
+  l08 totDarrere     before -     after -
+  l08 totDavant      before M     after M

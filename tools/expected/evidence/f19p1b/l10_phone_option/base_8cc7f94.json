@@ -1,0 +1,114 @@
+{
+ "before_scroll": {
+  "step": "A-pregunta",
+  "body": {
+   "rect": [
+    0,
+    524,
+    393,
+    264
+   ],
+   "scrollTop": 0,
+   "scrollHeight": 323,
+   "clientHeight": 264,
+   "scrollable": true
+  },
+  "nav": [
+   0,
+   788,
+   393,
+   63
+  ],
+  "opts": [
+   {
+    "text": "La part de davant",
+    "rect": [
+     14,
+     689,
+     365,
+     44
+    ],
+    "hit": true,
+    "by": null
+   },
+   {
+    "text": "La part de darrere",
+    "rect": [
+     14,
+     739,
+     365,
+     44
+    ],
+    "hit": true,
+    "by": null
+   },
+   {
+    "text": "Cap de les dues",
+    "rect": [
+     14,
+     789,
+     365,
+     44
+    ],
+    "hit": false,
+    "by": "Lnext"
+   }
+  ]
+ },
+ "after_scroll": {
+  "step": "A-pregunta",
+  "body": {
+   "rect": [
+    0,
+    524,
+    393,
+    264
+   ],
+   "scrollTop": 45,
+   "scrollHeight": 323,
+   "clientHeight": 264,
+   "scrollable": true
+  },
+  "nav": [
+   0,
+   788,
+   393,
+   63
+  ],
+  "opts": [
+   {
+    "text": "La part de davant",
+    "rect": [
+     14,
+     644,
+     365,
+     44
+    ],
+    "hit": true,
+    "by": null
+   },
+   {
+    "text": "La part de darrere",
+    "rect": [
+     14,
+     694,
+     365,
+     44
+    ],
+    "hit": true,
+    "by": null
+   },
+   {
+    "text": "Cap de les dues",
+    "rect": [
+     14,
+     744,
+     365,
+     44
+    ],
+    "hit": true,
+    "by": null
+   }
+  ]
+ }
+}

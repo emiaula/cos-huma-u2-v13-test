@@ -1,0 +1,6 @@
+phone P393 full-body views: framed region height on screen (px), free model area height (px)
+l04.cos: region 425 -> 326 px (77%); free area 430 -> 378 px; head cut:1.00 -> in
+l07.cos: region 425 -> 326 px (77%); free area 430 -> 378 px; head cut:1.00 -> in
+l08.cos: region 425 -> 326 px (77%); free area 430 -> 378 px; head cut:1.00 -> in
+l08.totDavant: region 426 -> 326 px (77%); free area 430 -> 378 px; head cut:1.00 -> in
+l08.totDarrere: region 426 -> 326 px (77%); free area 430 -> 378 px; head cut:1.00 -> in

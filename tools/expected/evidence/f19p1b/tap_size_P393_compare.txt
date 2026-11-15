@@ -1,0 +1,8 @@
+before: 125 fully visible name-in-view cases; smaller side < 44 px: 55; median 52 px
+after: 144 fully visible name-in-view cases; smaller side < 44 px: 69; median 46.0 px
+  l03: median smaller side 42 -> 38.5 px
+  l04: median smaller side 24.5 -> 19 px
+  l07: median smaller side 133.0 -> 102.0 px
+  l08: median smaller side 97.5 -> 68 px
+cases in both builds: 119 · median size ratio after/before: 0.77
+no longer fully visible after: ['l03.braç:metacarp', 'l03.braçDarrere:falanges', 'l03.braçDarrere:metacarp', 'l08.coll:dorsal', 'l08.davant:gluti', 'l08.davantCostat:gluti']

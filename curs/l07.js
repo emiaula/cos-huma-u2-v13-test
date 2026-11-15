@@ -43,13 +43,14 @@ export default {
   },
   views: {
     cos: c => c.A.flyTo(new c.T.Vector3(0, .9, 0), new c.T.Vector3(0, .12, c.fitDist(.95, .55))),
-    braç: c => { const b = c.A.boxOf(c.A.find(/^left (humerus|ulna|radius)$/, 'bone')), m = b.getCenter(new c.T.Vector3()); c.A.flyTo(m, new c.T.Vector3(.35, .1, 1).normalize().multiplyScalar(c.fitDist(.36))); },
+    // F19: the arm view keeps the head out; trunk and back views show the whole head
+    braç: c => c.compose(c.A.find(/^left (humerus|ulna|radius)$/, 'bone'), [.35, .1, 1], { clear: ['head'] }),
     mà: c => { const b = c.A.boxOf(c.A.find(/^left (.*metacarpal|scaphoid|capitate)|phalanx of left (thumb|.*finger)/, 'bone')), m = b.getCenter(new c.T.Vector3()); c.A.flyTo(m, new c.T.Vector3(.3, .05, 1).normalize().multiplyScalar(c.fitDist(.13))); },
     peu: c => { const b = c.A.boxOf(c.A.find(/^left .*metatarsal|^left calcaneus$|phalanx of left .*toe/, 'bone')), m = b.getCenter(new c.T.Vector3()); c.A.flyTo(m, new c.T.Vector3(.4, -.6, .7).normalize().multiplyScalar(c.fitDist(.16))); },
     cara: c => c.A.flyTo(new c.T.Vector3(0, 1.6, .03), new c.T.Vector3(.25, .05, 1).normalize().multiplyScalar(c.fitDist(.15))),
     mig: c => c.A.flyTo(new c.T.Vector3(.05, 1.2, 0), new c.T.Vector3(.3, .05, 1).normalize().multiplyScalar(c.fitDist(.58, .45))),
-    tronc: c => c.A.flyTo(new c.T.Vector3(0, 1.15, 0), new c.T.Vector3(.6, .05, 1).normalize().multiplyScalar(c.fitDist(.42))),
-    esquena: c => c.A.flyTo(new c.T.Vector3(0, 1.15, 0), new c.T.Vector3(.4, .05, -1).normalize().multiplyScalar(c.fitDist(.42))),
+    tronc: c => c.compose({ center: [0, 1.15, 0], h: .42, w: .42 * .55 }, [.6, .05, 1], { whole: ['head'] }),
+    esquena: c => c.compose({ center: [0, 1.15, 0], h: .42, w: .42 * .55 }, [.4, .05, -1], { whole: ['head'] }),
   },
   neutral(c) { c.A.setLayer('allMuscle', true); },
   setup(c) {

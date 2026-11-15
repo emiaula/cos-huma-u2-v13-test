@@ -1,0 +1,2 @@
+cases 432 same set True per lesson {'l01': 18, 'l02': 54, 'l03': 30, 'l04': 42, 'l05': 36, 'l06': 30, 'l07': 48, 'l08': 66, 'l09': 54, 'l10': 6, 'l11': 30, 'l12': 18}
+max abs difference 1.5071194073647094 · cases differing by more than 1e-6: 72 · shape mismatch: 0

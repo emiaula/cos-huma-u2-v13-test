@@ -1,0 +1,716 @@
+[
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "braç",
+"parts": {
+"humer": {
+"w": 57,
+"h": 175
+},
+"cubit": {
+"w": 18,
+"h": 144
+},
+"radi": {
+"w": 24,
+"h": 134
+},
+"carp": {
+"w": 28,
+"h": 17
+},
+"metacarp": {
+"w": 46,
+"h": 46
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "braçDarrere",
+"parts": {
+"humer": {
+"w": 52,
+"h": 176
+},
+"cubit": {
+"w": 41,
+"h": 139
+},
+"radi": {
+"w": 42,
+"h": 130
+},
+"carp": {
+"w": 26,
+"h": 17
+},
+"metacarp": {
+"w": 46,
+"h": 44
+},
+"falanges": {
+"w": 59,
+"h": 60
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "ma",
+"parts": {
+"carp": {
+"w": 93,
+"h": 59
+},
+"metacarp": {
+"w": 155,
+"h": 154
+},
+"falanges": {
+"w": 205,
+"h": 232
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "maDarrere",
+"parts": {
+"carp": {
+"w": 94,
+"h": 62
+},
+"metacarp": {
+"w": 162,
+"h": 159
+},
+"falanges": {
+"w": 207,
+"h": 223
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l03",
+"view": "tot",
+"parts": {
+"humer": {
+"w": 37,
+"h": 175
+},
+"cubit": {
+"w": 38,
+"h": 143
+},
+"radi": {
+"w": 33,
+"h": 134
+},
+"carp": {
+"w": 19,
+"h": 17
+},
+"metacarp": {
+"w": 23,
+"h": 46
+},
+"falanges": {
+"w": 41,
+"h": 65
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "cama",
+"parts": {
+"femur": {
+"w": 50,
+"h": 206
+},
+"rotula": {
+"w": 18,
+"h": 17
+},
+"tibia": {
+"w": 33,
+"h": 167
+},
+"perone": {
+"w": 14,
+"h": 168
+},
+"tars": {
+"w": 25,
+"h": 30
+},
+"metatars": {
+"w": 34,
+"h": 24
+},
+"falangesPeu": {
+"w": 37,
+"h": 11
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "camaCostat",
+"parts": {
+"femur": {
+"w": 31,
+"h": 205
+},
+"rotula": {
+"w": 9,
+"h": 17
+},
+"tibia": {
+"w": 26,
+"h": 166
+},
+"perone": {
+"w": 12,
+"h": 169
+},
+"tars": {
+"w": 49,
+"h": 31
+},
+"metatars": {
+"w": 47,
+"h": 26
+},
+"falangesPeu": {
+"w": 41,
+"h": 13
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "camaDarrere",
+"parts": {
+"femur": {
+"w": 51,
+"h": 207
+},
+"rotula": {
+"w": 18,
+"h": 17
+},
+"tibia": {
+"w": 33,
+"h": 166
+},
+"perone": {
+"w": 16,
+"h": 170
+},
+"tars": {
+"w": 38,
+"h": 33
+},
+"metatars": {
+"w": 33,
+"h": 22
+},
+"falangesPeu": {
+"w": 34,
+"h": 11
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "peu",
+"parts": {
+"tars": {
+"w": 68,
+"h": 92
+},
+"metatars": {
+"w": 94,
+"h": 89
+},
+"falangesPeu": {
+"w": 100,
+"h": 64
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "peuCostat",
+"parts": {
+"tars": {
+"w": 134,
+"h": 82
+},
+"metatars": {
+"w": 125,
+"h": 77
+},
+"falangesPeu": {
+"w": 109,
+"h": 48
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "tot",
+"parts": {
+"rotula": {
+"w": 14,
+"h": 17
+},
+"tibia": {
+"w": 31,
+"h": 167
+},
+"perone": {
+"w": 12,
+"h": 169
+},
+"tars": {
+"w": 33,
+"h": 30
+},
+"metatars": {
+"w": 42,
+"h": 25
+},
+"falangesPeu": {
+"w": 40,
+"h": 12
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l04",
+"view": "cos",
+"parts": {
+"femur": {
+"w": 26,
+"h": 104
+},
+"rotula": {
+"w": 9,
+"h": 9
+},
+"tibia": {
+"w": 17,
+"h": 85
+},
+"perone": {
+"w": 8,
+"h": 86
+},
+"tars": {
+"w": 16,
+"h": 16
+},
+"metatars": {
+"w": 17,
+"h": 12
+},
+"falangesPeu": {
+"w": 19,
+"h": 5
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "cos",
+"parts": {
+"llarg": {
+"w": 104,
+"h": 78
+},
+"curt": {
+"w": 138,
+"h": 200
+},
+"anular": {
+"w": 24,
+"h": 25
+},
+"pla": {
+"w": 88,
+"h": 161
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "braç",
+"parts": {}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "mà",
+"parts": {}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "peu",
+"parts": {}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "cara",
+"parts": {
+"anular": {
+"w": 151,
+"h": 160
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "mig",
+"parts": {
+"llarg": {
+"w": 165,
+"h": 129
+},
+"anular": {
+"w": 38,
+"h": 40
+},
+"pla": {
+"w": 137,
+"h": 265
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "tronc",
+"parts": {
+"llarg": {
+"w": 210,
+"h": 180
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l07",
+"view": "esquena",
+"parts": {
+"llarg": {
+"w": 224,
+"h": 179
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "cap",
+"parts": {
+"orbicular": {
+"w": 186,
+"h": 94
+},
+"masseter": {
+"w": 222,
+"h": 126
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "capCostat",
+"parts": {
+"orbicular": {
+"w": 112,
+"h": 97
+},
+"masseter": {
+"w": 162,
+"h": 135
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "coll",
+"parts": {
+"deltoide": {
+"w": 131,
+"h": 268
+},
+"pectoral": {
+"w": 135,
+"h": 230
+},
+"dorsal": {
+"w": 104,
+"h": 315
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "collDarrere",
+"parts": {
+"trapezi": {
+"w": 131,
+"h": 345
+},
+"deltoide": {
+"w": 174,
+"h": 208
+},
+"pectoral": {
+"w": 171,
+"h": 201
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "davant",
+"parts": {
+"deltoide": {
+"w": 262,
+"h": 103
+},
+"pectoral": {
+"w": 224,
+"h": 144
+},
+"abdominal": {
+"w": 95,
+"h": 240
+},
+"dorsal": {
+"w": 210,
+"h": 236
+},
+"gluti": {
+"w": 163,
+"h": 165
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "davantCostat",
+"parts": {
+"deltoide": {
+"w": 172,
+"h": 105
+},
+"pectoral": {
+"w": 160,
+"h": 143
+},
+"abdominal": {
+"w": 66,
+"h": 237
+},
+"dorsal": {
+"w": 136,
+"h": 237
+},
+"gluti": {
+"w": 109,
+"h": 170
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "darrere",
+"parts": {
+"abdominal": {
+"w": 90,
+"h": 236
+},
+"gluti": {
+"w": 168,
+"h": 162
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "darrereCostat",
+"parts": {
+"abdominal": {
+"w": 66,
+"h": 236
+},
+"dorsal": {
+"w": 128,
+"h": 245
+},
+"gluti": {
+"w": 103,
+"h": 168
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "totDavant",
+"parts": {
+"orbicular": {
+"w": 42,
+"h": 21
+},
+"masseter": {
+"w": 51,
+"h": 28
+},
+"ecm": {
+"w": 57,
+"h": 84
+},
+"trapezi": {
+"w": 129,
+"h": 184
+},
+"deltoide": {
+"w": 177,
+"h": 71
+},
+"pectoral": {
+"w": 151,
+"h": 98
+},
+"abdominal": {
+"w": 63,
+"h": 162
+},
+"dorsal": {
+"w": 142,
+"h": 161
+},
+"gluti": {
+"w": 111,
+"h": 113
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "totDarrere",
+"parts": {
+"orbicular": {
+"w": 37,
+"h": 18
+},
+"masseter": {
+"w": 45,
+"h": 25
+},
+"ecm": {
+"w": 51,
+"h": 74
+},
+"trapezi": {
+"w": 117,
+"h": 168
+},
+"deltoide": {
+"w": 159,
+"h": 63
+},
+"pectoral": {
+"w": 135,
+"h": 84
+},
+"abdominal": {
+"w": 55,
+"h": 145
+},
+"dorsal": {
+"w": 127,
+"h": 151
+},
+"gluti": {
+"w": 100,
+"h": 98
+}
+}
+},
+{
+"vp": "P393",
+"lesson": "l08",
+"view": "cos",
+"parts": {
+"orbicular": {
+"w": 24,
+"h": 11
+},
+"masseter": {
+"w": 28,
+"h": 15
+},
+"ecm": {
+"w": 28,
+"h": 44
+},
+"trapezi": {
+"w": 73,
+"h": 101
+},
+"deltoide": {
+"w": 102,
+"h": 38
+},
+"pectoral": {
+"w": 88,
+"h": 52
+},
+"abdominal": {
+"w": 36,
+"h": 90
+},
+"dorsal": {
+"w": 82,
+"h": 90
+},
+"gluti": {
+"w": 64,
+"h": 60
+}
+}
+}
+]

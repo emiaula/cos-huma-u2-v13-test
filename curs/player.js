@@ -41,14 +41,17 @@ const L = $('L'), body = $('Lbody');
 // half-height/half-width fit it. Lessons without the flag keep the original framing unchanged.
 const SAFE = !!CFG.safeFrame, MARGIN = .06;
 function safeRect() {
+  const f = freeRect(), mx = Math.max(0, f.x1 - f.x0) * MARGIN, my = Math.max(0, f.y1 - f.y0) * MARGIN;
+  return { x0: f.x0 + mx, y0: f.y0 + my, x1: Math.max(f.x0 + mx + 1, f.x1 - mx), y1: Math.max(f.y0 + my + 1, f.y1 - my) };
+}
+function freeRect() {   // the part of the window where the model can be seen (no margin)
   const W = innerWidth, H = innerHeight; let x0 = 0, y0 = 0, x1 = W, y1 = H;
   const ban = document.querySelector('.banner'); if (ban && getComputedStyle(ban).display !== 'none') y0 = Math.max(y0, ban.getBoundingClientRect().bottom);   // fixed: offsetParent is null
   if (L.style.display !== 'none') { const r = L.getBoundingClientRect(); if (W <= 760) y1 = Math.min(y1, r.top); else x1 = Math.min(x1, r.left - 10); }
   const vb = $('Vbox');
   if (vb && getComputedStyle(vb).display !== 'none') { const r = vb.getBoundingClientRect();
     if (r.width && r.height && r.left < x1 && r.top < y1) { if (r.height >= r.width) x1 = Math.min(x1, r.left - 8); else y1 = Math.min(y1, r.top - 8); } }
-  const mx = Math.max(0, x1 - x0) * MARGIN, my = Math.max(0, y1 - y0) * MARGIN;
-  return { x0: x0 + mx, y0: y0 + my, x1: Math.max(x0 + mx + 1, x1 - mx), y1: Math.max(y0 + my + 1, y1 - my) };
+  return { x0, y0, x1, y1 };
 }
 function fitDist(h, w = h * .55) {
   const v = camera.view && camera.view.enabled ? camera.view : null, tf = Math.tan(T.MathUtils.degToRad(camera.fov / 2));
@@ -83,6 +86,72 @@ const showParts = Object.fromEntries(Object.entries(NM).map(([k, n]) => [k, n.sh
 function frame(keys, dir = [0, .1, 1], pad = 1.25, ms) {
   const ms_ = keys.flatMap(k => parts[k]); const b = A.boxOf(ms_), c = b.getCenter(new T.Vector3()), sz = b.getSize(new T.Vector3());
   A.flyTo(c, new T.Vector3(...dir).normalize().multiplyScalar(fitDist(sz.y / 2 * pad, Math.max(sz.x, sz.z) / 2 * pad)), ms);
+}
+// F19 declarative composition (shared). A view says WHAT it shows and FROM WHERE; the player works out the camera so
+// that the target fills the safe area exactly (screen-space fit, perspective included).
+//   target : name keys (['humer', …]) | meshes | { center: [x, y, z], h, w } (a region: half height / half width)
+//   dir    : viewing direction (towards the camera)
+//   opts.pad   : > 1 leaves more room around the target (default 1)
+//   opts.whole : body regions shown entirely, e.g. ['head'] (neck, trunk and face views)
+//   opts.clear : body regions kept entirely out of the picture, e.g. ['head'] (arm views). The frame may only slide
+//                inside the room the target leaves; if the region still shows, it is shown whole instead — the target
+//                is never cut to hide a region. Each composition is logged in shotLog (tests read it).
+const REG_RE = {
+  head: /^(frontal bone|occipital bone|mandible|left parietal bone|right parietal bone|left maxilla|right maxilla|left temporal bone|right temporal bone|left zygomatic bone|right zygomatic bone)$/,
+  handL: /^left (.*metacarpal bone|scaphoid|lunate|capitate|hamate|trapezium|trapezoid|pisiform|triquetrum)$|phalanx of left (thumb|.*finger)$/,
+  handR: /^right (.*metacarpal bone|scaphoid|lunate|capitate|hamate|trapezium|trapezoid|pisiform|triquetrum)$|phalanx of right (thumb|.*finger)$/,
+  footL: /^left (calcaneus|talus|navicular bone|cuboid bone|.*cuneiform bone|.*metatarsal bone)$|phalanx of left .*toe$/,
+  footR: /^right (calcaneus|talus|navicular bone|cuboid bone|.*cuneiform bone|.*metatarsal bone)$|phalanx of right .*toe$/ };
+const regPts = {}, shotLog = [];
+function samplePts(meshes, cap = 4000) {
+  let n = 0; for (const m of meshes) n += m.geometry.attributes.position.count;
+  const st = Math.max(1, Math.floor(n / cap)), out = [], v = new T.Vector3();
+  for (const m of meshes) { m.updateMatrixWorld(true); const p = m.geometry.attributes.position; for (let i = 0; i < p.count; i += st) out.push(v.fromBufferAttribute(p, i).applyMatrix4(m.matrixWorld).clone()); }
+  return out;
+}
+const region = k => regPts[k] || (regPts[k] = samplePts(A.find(REG_RE[k], 'bone'), 1500));
+function compose(target, dir, opts = {}) {
+  const W = innerWidth, H = innerHeight, s = safeRect(), fr = freeRect(), dn = new T.Vector3(...dir).normalize();
+  const pc = camera.clone(); pc.up.set(0, 1, 0);
+  const at = (t, d) => { pc.position.copy(t).addScaledVector(dn, d); pc.lookAt(t); pc.updateMatrixWorld(true); pc.matrixWorldInverse.copy(pc.matrixWorld).invert(); };
+  const scr = pts => pts.map(p => { const q = p.clone().project(pc); return { x: (q.x + 1) / 2 * W, y: (1 - q.y) / 2 * H, front: q.z < 1 }; });
+  const box = sp => ({ x0: Math.min(...sp.map(p => p.x)), y0: Math.min(...sp.map(p => p.y)), x1: Math.max(...sp.map(p => p.x)), y1: Math.max(...sp.map(p => p.y)) });
+  const inside = (sp, r) => sp.filter(p => p.front && p.x >= r.x0 && p.x <= r.x1 && p.y >= r.y0 && p.y <= r.y1).length / sp.length;
+  // target points and a first guess
+  let pts, t;
+  at(new T.Vector3(), 1); const right = new T.Vector3().setFromMatrixColumn(pc.matrixWorld, 0), up = new T.Vector3().setFromMatrixColumn(pc.matrixWorld, 1);
+  if (Array.isArray(target) && typeof target[0] === 'string') target = target.flatMap(k => parts[k]);
+  if (Array.isArray(target)) { const b = A.boxOf(target); t = b.getCenter(new T.Vector3()); pts = samplePts(target); }
+  else { t = new T.Vector3(...target.center); pts = []; for (const a of [-1, 0, 1]) for (const b of [-1, 0, 1]) pts.push(t.clone().addScaledVector(right, a * target.w).addScaledVector(up, b * target.h)); }
+  const whole = [...(opts.whole || [])], log = { view: lastView, whole: [...whole], clear: [...(opts.clear || [])], fallback: [], rect: Array.isArray(target) ? null : target };
+  const fit = P => {   // slide + scale until the points' screen box fills the safe area (6 rounds converge)
+    const tf = Math.tan(T.MathUtils.degToRad(pc.fov / 2)), fullH = pc.view && pc.view.enabled ? pc.view.fullHeight : H;
+    let tt = P.reduce((a, p) => a.add(p), new T.Vector3()).multiplyScalar(1 / P.length), d = 3;
+    for (let i = 0; i < 8; i++) {
+      at(tt, d); const b = box(scr(P)), k = Math.max((b.x1 - b.x0) / (s.x1 - s.x0), (b.y1 - b.y0) / (s.y1 - s.y0)), wpp = 2 * d * tf / fullH;
+      tt = tt.clone().addScaledVector(right, ((b.x0 + b.x1) / 2 - (s.x0 + s.x1) / 2) * wpp).addScaledVector(up, -((b.y0 + b.y1) / 2 - (s.y0 + s.y1) / 2) * wpp);
+      d *= k;
+    }
+    return { t: tt, d: d * (opts.pad || 1) };
+  };
+  const all = () => pts.concat(...whole.map(region));
+  let f = fit(all());
+  for (const k of opts.clear || []) {
+    at(f.t, f.d); if (inside(scr(region(k)), fr) === 0) continue;
+    // slide the frame inside the room the target leaves; keep the candidate nearest to the fitted one
+    const tf = Math.tan(T.MathUtils.degToRad(pc.fov / 2)), fullH = pc.view && pc.view.enabled ? pc.view.fullHeight : H, wpp = 2 * f.d * tf / fullH;
+    const b = box(scr(all())), xs = [], ys = [], N = 12;
+    for (let i = 0; i <= N; i++) { xs.push((s.x0 - b.x0) + (s.x1 - b.x1 - (s.x0 - b.x0)) * i / N); ys.push((s.y0 - b.y0) + (s.y1 - b.y1 - (s.y0 - b.y0)) * i / N); }
+    let best = null;
+    for (const dx of xs) for (const dy of ys) {
+      const tt = f.t.clone().addScaledVector(right, -dx * wpp).addScaledVector(up, dy * wpp); at(tt, f.d);
+      if (inside(scr(region(k)), fr) === 0 && inside(scr(all()), s) >= .999) { const c = Math.hypot(dx, dy); if (!best || c < best.c) best = { c, t: tt }; }
+    }
+    if (best) f = { t: best.t, d: f.d };
+    else { whole.push(k); log.fallback.push(k); f = fit(all()); }
+  }
+  log.whole = whole; shotLog.push(log);
+  A.flyTo(f.t, dn.clone().multiplyScalar(f.d), opts.ms);
 }
 const view = name => { lastView = name; return CFG.views[name](ctx); };
 
@@ -459,7 +528,7 @@ $('Lspeak').style.display = 'none';
 function showApp() { document.body.classList.add('lessonMode'); L.style.display = ''; viewBtns(); viewOffset(true); CFG.setup(ctx); timeHints(); }
 
 // ---------------------------------------------------------------- context handed to lesson configs
-const ctx = { A, T, $, esc, wait, later, alive, shuffle, parts, memo, curio, frame, view, fitDist, label, clearLabels, nameLabels, centerOf, book, ossi, zh, aid, setNext, feedback, hidden,
+const ctx = { A, T, $, esc, wait, later, alive, shuffle, parts, memo, curio, frame, compose, shotLog, view, fitDist, label, clearLabels, nameLabels, centerOf, book, ossi, zh, aid, setNext, feedback, hidden,
   showParts, CONTENT, choiceSeries, stepper, tapTask, ladderChoice, predict, recall, sayName, spell, sequence, evid, get rec() { return rec; }, saveRec, nameGroupStages, reviewStage, spellStage, resultsStage };
 S = CFG.stages(ctx);
 

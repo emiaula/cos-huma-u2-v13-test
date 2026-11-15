@@ -7,6 +7,11 @@ const fs = (c, keys, dir, pad) => {   // frame the shown (left) parts; dir.x > 0
   const s = Math.sign(m.x) || 1;
   c.A.flyTo(m, new c.T.Vector3(dir[0] * s, dir[1], dir[2]).normalize().multiplyScalar(c.fitDist(sz.y / 2 * pad, Math.max(sz.x, sz.z) / 2 * pad)));
 };
+// F19: the same framing, composed by the shared player (the head is shown whole in face, neck and trunk views)
+const fc = (c, keys, dir, opts) => {
+  const ms = keys.flatMap(k => c.showParts[k]), s = Math.sign(c.A.boxOf(ms).getCenter(new c.T.Vector3()).x) || 1;
+  c.compose(ms, [dir[0] * s, dir[1], dir[2]], opts);
+};
 export default {
   id: 'l08', safeFrame: true,   // F19 shared camera safe area (player.js)
   title: 'Els músculs del cap i del tronc 🙂', subtitle: 'Lliçó 8 (llibre p. 27). Nou noms de músculs en quatre grups petits. Tu manes el ritme.',
@@ -31,12 +36,12 @@ export default {
     gluti: { ca: 'gluti', g: M, re: /gluteus maximus/, show: /^left gluteus maximus$/, aid: 'És el múscul gran de les natges.', zh: 'gluti：屁股上的大块肌肉（臀大肌）。' },
   },
   views: {
-    cap: c => fs(c, ['orbicular', 'masseter'], [.35, .05, 1], 2.2),
-    capCostat: c => fs(c, ['orbicular', 'masseter'], [1, .1, .5], 2.2),
-    coll: c => fs(c, ['ecm', 'trapezi', 'deltoide'], [1, .65, .15], 1.15),
-    collDarrere: c => fs(c, ['ecm', 'trapezi', 'deltoide'], [1, .35, -.35], 1.15),
-    davant: c => fs(c, ['pectoral', 'abdominal'], [.3, .05, 1], 1.25),
-    davantCostat: c => fs(c, ['pectoral', 'abdominal'], [1, .05, .6], 1.25),
+    cap: c => fc(c, ['orbicular', 'masseter'], [.35, .05, 1], { whole: ['head'] }),
+    capCostat: c => fc(c, ['orbicular', 'masseter'], [1, .1, .5], { whole: ['head'] }),
+    coll: c => fc(c, ['ecm', 'trapezi', 'deltoide'], [1, .65, .15], { whole: ['head'] }),
+    collDarrere: c => fc(c, ['ecm', 'trapezi', 'deltoide'], [1, .35, -.35], { whole: ['head'] }),
+    davant: c => fc(c, ['pectoral', 'abdominal'], [.3, .05, 1], { whole: ['head'] }),
+    davantCostat: c => fc(c, ['pectoral', 'abdominal'], [1, .05, .6], { whole: ['head'] }),
     darrere: c => fs(c, ['dorsal', 'gluti'], [.3, .05, -1], 1.15),
     darrereCostat: c => fs(c, ['dorsal', 'gluti'], [1, .05, -.5], 1.15),
     totDavant: c => c.A.flyTo(new c.T.Vector3(0, 1.25, 0), new c.T.Vector3(.35, .05, 1).normalize().multiplyScalar(c.fitDist(.52, .4))),

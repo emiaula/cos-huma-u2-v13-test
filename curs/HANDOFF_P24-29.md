@@ -24,7 +24,7 @@ teaching product is accepted.
 | Closed | F18 evidence index | still PASS |
 | Closed | F01–F16, N1 | round-1 acceptance (F01 closed together with F17) |
 | Frozen technical baseline | `8cc7f94` | main = GitHub = Pages, checked 2026-11-14; tag `f17-f18-accepted-8cc7f94` (local; push approved but failed: remote disconnect, see below); evidence index `tools/expected/evidence/CODEX_R4_INDEX.md` (**evidence gap**: the Codex round-4 report text itself is not archived) |
-| In progress | F19 UI/UX phase 1 | branch `f19-phase1` (not merged, not deployed): shared toolbar layout + shared camera safe area, piloted on l03/l04/l07/l08; waiting for the user's review of the pilot — see «F19 phase 1 pilot» below |
+| In progress | F19 UI/UX phase 1 | branch `f19-phase1` (not merged, not deployed): pilot `856a79b` + declarative composition of 12 views; waiting for the user's review — see the two F19 sections below |
 | Manual acceptance pending | real devices, Emily trial, Catalan review | not done; never report as done |
 | Deferred | l13–l19 (P30–37) | phase 2, new window |
 
@@ -251,6 +251,31 @@ from a branch (main); a pushed `f19-phase1` would not be deployed. Push still to
 
 **Before merging (later, after approval)**: bump the module query `?v=1b` in `player.js` so browsers fetch the new
 lesson files; the 8 other lessons get the toolbar move but not the safe area until evaluated.
+
+## F19 phase 1 · declarative composition (2026-11-15, branch `f19-phase1`, on top of `856a79b`)
+
+User instruction 11-14 22:26: keep `856a79b` traceable; fix the remaining views declaratively; neck, trunk and face
+views show the whole head; arm views keep the head out without cutting the target; hand/foot cases judged one by one
+with images, no mechanical cropping; no change to content, scoring, records, models, l10 or other lessons' cameras.
+
+- `player.js` `compose(target, dir, { whole, clear, pad })` (shared): screen-space fit of the target into the safe
+  area; `whole` regions shown entirely; `clear` regions kept out by sliding the frame only inside the room the target
+  leaves, else shown whole (`fallback`, logged in `ctx.shotLog`).
+- 12 views now composed: l03 `braç` `braçDarrere` `tot` (clear head); l07 `braç` (clear head), `tronc` `esquena`
+  (whole head); l08 `cap` `capCostat` `coll` `collDarrere` `davant` `davantCostat` (whole head).
+- Result (31 pilot views × 6 viewports): head cut 42 (`8cc7f94`) → 61 (`856a79b`) → **0**; no fallback needed; target
+  outside safe area 0; camera of every other view and lesson identical to `856a79b` (360/360 cases).
+- Hands/feet: 53 cases in 15 views remain, judged one by one (review pack, section 3) — no code change, user decision.
+- Phone: model about 23 % smaller than on `8cc7f94`; limitation pending acceptance (`tap_size_P393_compare.txt`).
+- **F19-14 (open, not fixed)**: phone 393×851, l10 step `A-pregunta`: the third option «Cap de les dues» is below
+  the visible panel body (body 264 px high, content 323 px); its centre lies under the «Continua» bar until the panel
+  is scrolled 45 px. Same on `8cc7f94`. Not counted as solved.
+- **GitHub push**: diagnosed with the session's existing credentials and proxy (no new permission requested):
+  `GET info/refs?service=git-receive-pack` → 200, `POST git-receive-pack` → **HTTP 403**; the proxy logs no failure,
+  so the write is refused upstream (no write access for this session to `emiaula/cos-huma-u2-v13-test`, reached via
+  the old `xgridseurope` URL). Read and fetch work. The branch is delivered as a git bundle until the user pushes it
+  or grants write access.
+- Review pack: `tools/f19_review/F19P1_REVIEW_PACK.md`; evidence `tools/expected/evidence/f19p1b/`.
 
 ## How to re-verify (independent reviewer)
 

@@ -19,11 +19,12 @@ export default {
     falanges: { ca: 'falanges', g: 'bone', re: /phalanx of left (thumb|.*finger)/, aid: 'Són els ossos dels dits.', zh: 'falanges：手指里的骨头（指骨）。' },
   },
   views: {
-    braç: c => c.frame(['humer', 'cubit', 'radi'], [.35, .05, 1], 1.4),
-    braçDarrere: c => c.frame(['humer', 'cubit', 'radi'], [.45, .05, -1], 1.4),
+    // F19: arm views keep the head out of the picture (shown whole only if that would cut the arm)
+    braç: c => c.compose(['humer', 'cubit', 'radi'], [.35, .05, 1], { clear: ['head'] }),
+    braçDarrere: c => c.compose(['humer', 'cubit', 'radi'], [.45, .05, -1], { clear: ['head'] }),
     ma: c => c.frame(['carp', 'metacarp', 'falanges'], [.35, 0, 1], 1.35),
     maDarrere: c => c.frame(['carp', 'metacarp', 'falanges'], [.45, 0, -1], 1.35),
-    tot: c => c.frame(['humer', 'cubit', 'radi', 'carp', 'metacarp', 'falanges'], [1, .05, .3], 1.08),
+    tot: c => c.compose(['humer', 'cubit', 'radi', 'carp', 'metacarp', 'falanges'], [1, .05, .3], { clear: ['head'] }),
   },
   setup(c) {
     for (const k of ['allMuscle', 'muscle', 'brain', 'spinal', 'nerves', 'eye']) c.A.setLayer(k, false);

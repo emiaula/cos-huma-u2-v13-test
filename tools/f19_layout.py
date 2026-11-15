@@ -18,6 +18,8 @@ VP = {'D1920': (1920, 1080, False), 'D1440': (1440, 900, False), 'D1366': (1366,
       'T1180L': (1180, 820, True), 'T820P': (820, 1180, True), 'P393': (393, 851, True)}
 os.makedirs(OUT, exist_ok=True)
 # toolbar buttons are one shared component: their function is tested in these lessons only (all lessons by default)
+# F19_VIEWS=l03.braç,l08.cap … limits the views measured (default: all)
+VIEWS = [x for x in os.environ.get('F19_VIEWS', '').split(',') if x]
 TB_LESSONS = os.environ.get('F19_TOOLBAR_LESSONS', ','.join(LESSONS)).split(',')
 
 HELPERS = r"""
@@ -71,13 +73,16 @@ window.__f19 = (() => {
   A.boxOf = ms => { if (cap) cap.meshes = ms; return oBox(ms); };
   C.fitDist = (h, w) => { const d = oFit(h, w); if (cap) cap.fit = [h, w === undefined ? h * .55 : w]; return d; };
   A.flyTo = (t, o, ms) => { if (cap) { cap.t = t.toArray(); cap.o = o.toArray(); cap.ms = ms; } return oFly(t, o, cap && cap.fast ? 1 : ms); };
-  function start(v, fast) { cap = { view: v, fast }; C.clearLabels && C.clearLabels(); C.view(v); const c = cap; return { t: c.t, o: c.o, mesh: !!c.meshes, fit: c.fit || null }; }
+  function start(v, fast) { const n0 = C.shotLog ? C.shotLog.length : 0; cap = { view: v, fast }; C.clearLabels && C.clearLabels(); C.view(v); const c = cap;
+    // a view composed by the shared compose(): its log says the region it frames and which body regions it shows whole / keeps out
+    const sh = C.shotLog && C.shotLog.length > n0 ? C.shotLog[C.shotLog.length - 1] : null; if (sh) { c.shot = sh; if (sh.rect && !c.meshes) c.fit = [sh.rect.h, sh.rect.w]; }
+    return { t: c.t, o: c.o, mesh: !!c.meshes, fit: c.fit || null, shot: sh }; }
   function camState() { const v = cam.view; return { fov: cam.fov, aspect: cam.aspect, view: v && v.enabled ? [v.fullWidth, v.fullHeight, v.offsetX, v.offsetY, v.width, v.height] : null }; }
   function measure() {
     const c = cap, fr = free(), sf = inset(fr, MARGIN), V = document.getElementById('Vbox'), vr = shown(V) ? rect(V) : null;
     let tp;
     if (c.meshes) tp = pts(c.meshes);
-    else if (c.fit && c.t) { cam.updateMatrixWorld(true); const t = new T.Vector3(...c.t), r = new T.Vector3().setFromMatrixColumn(cam.matrixWorld, 0), u = new T.Vector3().setFromMatrixColumn(cam.matrixWorld, 1);
+    else if (c.fit && c.t) { cam.updateMatrixWorld(true); const t = new T.Vector3(...(c.shot && c.shot.rect ? c.shot.rect.center : c.t)), r = new T.Vector3().setFromMatrixColumn(cam.matrixWorld, 0), u = new T.Vector3().setFromMatrixColumn(cam.matrixWorld, 1);
       tp = []; for (const a of [-1, -.5, 0, .5, 1]) for (const b of [-1, -.5, 0, .5, 1]) tp.push(t.clone().addScaledVector(r, a * c.fit[1]).addScaledVector(u, b * c.fit[0])); }
     else tp = [];
     const sp = screen(tp), bb = bbox(sp);
@@ -140,6 +145,7 @@ with sync_playwright() as pw:
                 rows.append({'vp': vp, 'lesson': L, 'step': 'question:' + sid, **g, 'toolbarWorks': toolbar_works(pg, touch) if L in TB_LESSONS else 'not run'})
             else:
                 for v in pg.evaluate("Object.keys(__curs.CFG.views||{})"):
+                    if VIEWS and f'{L}.{v}' not in VIEWS: continue
                     req = pg.evaluate("([v,f])=>__f19.start(v,f)", [v, MODE == 'views'])
                     if MODE == 'cam':
                         rows.append({'vp': vp, 'lesson': L, 'view': v, 'req': req, 'cam': pg.evaluate("__f19.camState()")}); continue
@@ -147,6 +153,7 @@ with sync_playwright() as pw:
                     pg.wait_for_function("([t,o])=>{const p=__app.camera.position,q=__app.controls.target;return Math.hypot(p.x-t[0]-o[0],p.y-t[1]-o[1],p.z-t[2]-o[2])<1e-3&&Math.hypot(q.x-t[0],q.y-t[1],q.z-t[2])<1e-3}", arg=[req['t'], req['o']], timeout=30000)
                     time.sleep(.8); m = pg.evaluate("__f19.measure()")
                     pg.screenshot(path=f'{OUT}/{vp}/{L}__{v}.png'); rows.append({'vp': vp, 'lesson': L, 'req': req, **m})
+                    rows[-1]['errs'] = errs[:]
             rows[-1]['errs'] = errs[:]
             print(MODE, PORT, vp, L, 'errs', len(errs), flush=True); ctx.close()
             json.dump(rows, open(f'{OUT}/{MODE}.json', 'w'), ensure_ascii=False, indent=0)   # saved after every lesson
